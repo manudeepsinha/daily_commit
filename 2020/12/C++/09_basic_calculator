@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+int main() {
+  float num1,num2;
+  char o;
+  cout<<"Enter two operands: ";
+  cin>>num1>>num2;
+  cout<<"Enter operand (eg: +,-,*,/): ";
+  cin>>o;
+  switch(o)
+  {
+    case '+':
+    cout<<num1+num2;
+    break;
+
+    case '-':
+    cout<<num1-num2;
+    break;
+
+    case '*':
+    cout<<num1*num2;
+    break;
+
+    case '/':
+    cout<<num1/num2;
+    break;
+
+    default:
+    cout<<"Not a valid operand!";
+    break;
+  }
+  
+  return 0;
+}
