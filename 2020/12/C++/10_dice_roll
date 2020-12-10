@@ -1,0 +1,50 @@
+#include<iostream>
+#include<cstdlib>
+#include<ctime>
+
+using namespace std;
+int main(){
+int dice;
+char r;
+
+srand(time(0));
+
+cout<<"Roll a die by typing r";
+dice = (rand()%6) + 1;
+if(r == 'r'){
+  switch (dice){
+
+    case 1:
+      cout<<"You rolled ONE";
+      break;
+    
+    case 2:
+      cout<<"You rolled TWO";
+      break;
+
+     case 3:
+      cout<<"You rolled THREE";
+      break;
+    
+    case 4:
+      cout<<"You rolled FOUR";
+      break;
+
+    case 5:
+      cout<<"You rolled FIVE";
+      break;
+    
+    case 6:
+      cout<<"You rolled SIX";
+      break;
+
+    default:
+      cout<<"INVALID ROLL";
+      break;
+    }
+  }
+  else{
+    cout<<"INVALID INPUT. CLOSING THE FUNCTION.";
+  }
+  return 0;
+}
