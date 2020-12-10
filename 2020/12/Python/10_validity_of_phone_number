@@ -1,0 +1,9 @@
+def check_valid(num):
+    if len(num) != 12:
+        return 'Not a 12 digits number!'
+    elif num[:2] != '91':
+        return 'Not an Indian number!'
+    elif num[2] not in ('987'):
+        return 'Not a valid number!'
+    else:
+        return 'Valid number'
