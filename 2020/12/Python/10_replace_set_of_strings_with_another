@@ -1,0 +1,29 @@
+user_string = input('Enter a string: ')
+user_string = user_string.split()
+count = 0
+index0 = 0
+index1 = 0
+op_string = ''
+no_poor = 0
+while count != len(user_string):
+    if user_string[count] == 'not':
+        index0 = count
+        innercount = count + 1
+        while user_string[innercount] != 'poor' and innercount < (len(user_string)-1):
+            innercount += 1
+        if user_string[innercount] == 'poor':
+            index1 = innercount
+            no_poor = 1
+        else:
+            break
+    count += 1
+if no_poor == 1:
+    del user_string[index0:index1+1]
+    user_string.insert(index0, 'good')
+    for word in user_string:
+        op_string += word
+        op_string += ' '
+    print(op_string)
+else:
+    print('Didn not find poor in the given string.')
+    print(user_string)
