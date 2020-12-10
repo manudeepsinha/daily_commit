@@ -1,0 +1,83 @@
+#Given
+groceries = ['banana','orange','apple','pear']
+stock = {'banana': 6,'apple': 0,'orange': 32,'pear': 15}
+prices = {'banana': 4,'apple': 2,'orange': 1.5,'pear': 3}
+
+
+#Taking the input of the groceries
+lst = input('Enter the items followed by their quantity: ')
+lst = lst.split()
+count = 0
+lst_groc = []
+lst_quan = []
+
+#Storing Quantity and Grocery item in seperating lists
+while count != len(lst):
+    if count%2 == 0:
+        lst_groc.append(lst[count])
+    else:
+        lst_quan.append(lst[count])
+    count += 1
+    
+#Checking the items are enough in the stock
+count1 = 0
+to_pop = []
+while count1 < len(lst_quan):
+    if int(stock[lst_groc[count1]]) >= int(lst_quan[count1]):
+        pass
+    else:
+        print(f"We don't have enough {lst_groc[count1]} in the stock")
+        to_pop.append(count1)
+    count1 += 1
+
+#Popping the out of stock items:
+to_pop_count = 0
+while to_pop_count < len(to_pop):
+    if to_pop_count == 0:
+        lst_groc.pop(to_pop[to_pop_count])
+        lst_quan.pop(to_pop[to_pop_count])
+    
+    else:
+        lst_groc.pop(to_pop[to_pop_count-1])
+        lst_quan.pop(to_pop[to_pop_count-1])
+    to_pop_count += 1
+
+#Totalling the bill value:
+count2 = 0
+item = ''
+quantity = ''
+cost_per_quan = 0.0
+cost = 0.0
+bucket = []
+total_cost = 0.0
+print('\n\n%10s : %10s : %17s : %10s' %('Item' , 'Quantity' , 'Cost per Quantity' , 'Cost'))
+while count2 != len(lst_groc):
+    item = lst_groc[count2]
+    quantity = lst_quan[count2]
+    cost_per_quan = prices[lst_groc[count2]]
+    cost = int(quantity)*float(cost_per_quan)
+    total_cost = float(total_cost) + float(cost)
+    print('%10s : %10s : %17s : %10s' %(item,quantity,cost_per_quan,cost))
+    count2 += 1
+print('\n%53s %d' %('Total:',total_cost))
+
+#Updating the stock list:
+count3 = 0
+while count3 != len(lst_groc):
+    stock[lst_groc[count3]] = stock[(lst_groc[count3])] - int(lst_quan[count3])
+    count3 += 1
+
+#Generating sold-out items:
+count4 = 0
+stock_keys = list(stock.keys())
+stock_vals = list(stock.values())
+sold_out = []
+while count4 != len(groceries):
+    if stock_vals[count4] <= 0:
+        sold_out.append(stock_keys[count4])
+    else:
+        pass
+    count4 += 1
+print('The sold-out items list is as follows: \n')
+for item in sold_out:
+     print(item)
