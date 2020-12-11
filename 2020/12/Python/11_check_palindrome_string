@@ -1,0 +1,10 @@
+#Function to check palindrome of input string.
+def is_palindrome(string):
+    return string == string[::-1]
+
+#driver code
+ip_string = input('Enter string: ')
+if is_palindrome(ip_string):
+    print('String is palindrome.')
+else:
+    print('Not a palindrome.')
