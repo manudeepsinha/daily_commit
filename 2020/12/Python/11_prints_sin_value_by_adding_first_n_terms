@@ -1,0 +1,14 @@
+from math import factorial as fac
+def sine(n,x):
+    n = n * (3.142 / 180.0)
+    i = 0
+    op = 0
+    while i <= x:
+        op += ((-1)**i)/((fac(2*i+1))**n)**(2*i + 1)
+        i += 1
+    return op
+
+n = int(input('Enter the angle: '))
+x = int(input('Enter the value upto which calculate: '))
+print(sine(n,x))
+    
