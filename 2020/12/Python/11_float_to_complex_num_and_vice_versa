@@ -1,0 +1,6 @@
+import math
+f = float(input('Enter a floating/decimal number: '))
+com = complex(f)
+g = float(com.real)
+print(f'float number {f} converted into complex number: {com}')
+print(f'complex number {com} converted into float: {g}')
