@@ -1,0 +1,14 @@
+#Function to demonstrate error handling
+def ask():
+    while True:
+        i = input('Input an integer: ')
+        try:
+            result = int(i)**2
+        except:
+            print('An error occurred! Please try again!')
+        else:
+            print('Thank you, your number squared is: ',result)
+            break
+
+#Driver-Code
+ask()            
