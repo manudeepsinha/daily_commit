@@ -1,0 +1,6 @@
+'''
+A function that takes input as a string
+and gives output as capitalized string
+'''
+def cap_text(text):
+	return text.title()
