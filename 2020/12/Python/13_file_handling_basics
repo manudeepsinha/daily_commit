@@ -1,0 +1,37 @@
+#Making a new file test00.txt ('a' or 'w' can also be used if the file names doesn't already exist)
+f = open('test00.txt','x')
+f.close()
+
+#Writing the file (appending)
+f = open('test00.txt','a')
+f.write('This is the first test line.')
+f.write('This is the second test line.\nThis is the third test line.')
+f.close()
+
+#Reading the file
+f = open('test00.txt','r')
+print(f.read())
+f.close()
+
+#Reading the file upto 10 character count
+f = open('test00.txt','r')
+print(f.read(10))
+f.close()
+
+#Writing the file (it'll override the file)
+f = open('test00.txt','w')
+f.write('Overridden line one.')
+f.write('Overridden line two.\nOverridden line three.')
+f.close()
+
+#Reading the first line
+f = open('test00.txt','r')
+print(f.readline())
+f.close()
+
+#Use of with() function (implicitly closes the file) along with iterating over each row in the file
+with open('test00.txt','r') as f:
+    count = 1
+    for row in f:
+        print(f'Row {count}:   ',row)
+        count += 1
