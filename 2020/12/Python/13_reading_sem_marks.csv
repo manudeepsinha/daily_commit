@@ -1,0 +1,35 @@
+#importing csv module
+import csv
+
+fname = '13_sem_marks.csv'
+
+#initializing rows and titles' list
+fields = []
+rows = []
+
+#reading the csv file
+with open(fname,'r') as csvfile:
+    
+    #creating csv reader object
+    csvreader = csv.reader(csvfile)
+    
+    #extracting titles in fields list
+    fields = next(csvreader)
+    
+    #extracting row values one by one
+    for row in csvreader:
+        rows.append(row)
+        
+    #printing out total #rows
+    print(f'Total number of rows is {csvreader.line_num}')
+    
+    #printing the field names
+    print('Field names are: ' + ', '.join(field for field in fields))
+    
+    #printing all the values
+    print('\nAll student marks are as follows:\n')
+    print('%13s %18s %11s\n' %('Name' ,'Semester' ,'Marks'))
+    for row in rows:
+        for col in row:
+            print('%13s' %col,end=' ')
+        print('\n')
