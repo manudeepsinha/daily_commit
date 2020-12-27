@@ -3,6 +3,7 @@ import seaborn as sns
 import numpy as np
 
 #NOTE: Each set of statements after print('\n\n') were run on different cell in the notebook.
+tips = sns.load_dataset('tips')
 
 #barplot() default uses mean as an estimator but with numpy, we can pass other estimator too.
 sns.barplot(x='sex',y='total_bill',data=tips, estimator = np.std)
