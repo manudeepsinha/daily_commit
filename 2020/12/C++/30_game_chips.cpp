@@ -49,7 +49,7 @@ int main()
 			do
 			{
 				//loop checks that the player takes valid number of chips
-				maxPerTurn = chipsInPile * MAX_CHIPS ;
+				maxPerTurn = chipsInPile * MAX_TURN ;
 
 				if(player1Turn)
 				{
