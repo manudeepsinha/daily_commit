@@ -39,7 +39,7 @@ int main()
 	do
 	{
 		//assigning number of chips in the pile
-		chipsInPile = (random() % MAX_CHIPS) + 1;
+		chipsInPile = (rand() % MAX_CHIPS) + 1;
 		cout << "This round will start with " << chipsInPile << " chips.";
 		gameOver = false;
 		
@@ -100,7 +100,7 @@ int main()
 			}
 		}
 			//asking to play again or not
-			cout >> "Do you want to play again? (Y/N): ";
+			cout << "Do you want to play again? (Y/N): ";
 			cin >> userChoice;
 
 	} while ((userChoice == 'y') || (userChoice == 'Y'));
