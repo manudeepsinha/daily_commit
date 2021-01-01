@@ -1,0 +1,578 @@
+
+lenovo@MD MINGW64 ~
+$ cd Desktop/first_git_project
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ pwd
+/c/Users/lenovo/Desktop/first_git_project
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   second_file.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git_sesson_01.txt
+        third_file.txt
+
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git commit -m "Add second file to the project"
+[master 41e5093] Add second file to the project
+ 1 file changed, 1 insertion(+)
+ create mode 100644 second_file.txt
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git log
+commit 41e50939537506a45da6b259781bbb5e9bc80fef (HEAD -> master)
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Thu Dec 31 23:38:14 2020 +0530
+
+    Add second file to the project
+
+commit f86a81feefe23d3f5723f9f00cdce54b2573ffb8
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Wed Dec 30 18:23:53 2020 +0530
+
+    Initial commit
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ cat .git/HEAD
+ref: refs/heads/master
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git_sesson_01.txt
+        third_file.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git add .
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git commit -m "Add third file and git session file"
+[master 08a7183] Add third file and git session file
+ 2 files changed, 325 insertions(+)
+ create mode 100644 git_sesson_01.txt
+ create mode 100644 third_file.txt
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git log
+commit 08a7183cd81b1f36ec546a40d3548a14b8e047d8 (HEAD -> master)
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Thu Dec 31 23:42:58 2020 +0530
+
+    Add third file and git session file
+
+commit 41e50939537506a45da6b259781bbb5e9bc80fef
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Thu Dec 31 23:38:14 2020 +0530
+
+    Add second file to the project
+
+commit f86a81feefe23d3f5723f9f00cdce54b2573ffb8
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Wed Dec 30 18:23:53 2020 +0530
+
+    Initial commit
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   first_file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git add .
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   first_file.txt
+
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   first_file.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   second_file.txt
+        modified:   third_file.txt
+
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git add second_file.txt
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   first_file.txt
+        modified:   second_file.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   third_file.txt
+
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git commit -m "Made changes to first and second files"
+[master 94c599a] Made changes to first and second files
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   third_file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git log
+commit 94c599a1c6aa2ea8efa41079bb2393bc026d498c (HEAD -> master)
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 13:01:08 2021 +0530
+
+    Made changes to first and second files
+
+commit 08a7183cd81b1f36ec546a40d3548a14b8e047d8
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Thu Dec 31 23:42:58 2020 +0530
+
+    Add third file and git session file
+
+commit 41e50939537506a45da6b259781bbb5e9bc80fef
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Thu Dec 31 23:38:14 2020 +0530
+
+    Add second file to the project
+
+commit f86a81feefe23d3f5723f9f00cdce54b2573ffb8
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Wed Dec 30 18:23:53 2020 +0530
+
+    Initial commit
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git add third_file.txt
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   third_file.txt
+
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git commit -m "Modified the third file"
+[master eb05111] Modified the third file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   first_file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git diff
+diff --git a/first_file.txt b/first_file.txt
+index b1e5838..5864730 100644
+--- a/first_file.txt
++++ b/first_file.txt
+@@ -1 +1,4 @@
+-This is the first file I added to my project.
+\ No newline at end of file
++This is the first file I added to my project.
++
++This file comes before the others.
++Git is tracking the changes in this file.
+\ No newline at end of file
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git diff
+diff --git a/first_file.txt b/first_file.txt
+index b1e5838..27f7b87 100644
+--- a/first_file.txt
++++ b/first_file.txt
+@@ -1 +1,4 @@
+-This is the first file I added to my project.
+\ No newline at end of file
++This is the first file I added to the project.
++
++This file comes before the others.
++Git is tracking the changes in this file.
+\ No newline at end of file
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git diff
+diff --git a/first_file.txt b/first_file.txt
+index b1e5838..27f7b87 100644
+--- a/first_file.txt
++++ b/first_file.txt
+@@ -1 +1,4 @@
+-This is the first file I added to my project.
+\ No newline at end of file
++This is the first file I added to the project.
++
++This file comes before the others.
++Git is tracking the changes in this file.
+\ No newline at end of file
+diff --git a/git_sesson_01.txt b/git_sesson_01.txt
+index 565fcf7..e5f3e7b 100644
+--- a/git_sesson_01.txt
++++ b/git_sesson_01.txt
+@@ -321,4 +321,9 @@ Untracked files:
+
+
+ lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+-$
+\ No newline at end of file
++$ Made changes to use in git example
++
++Does it shows the updated part or the whole text.
++
++The information could be useful.
++Hope it only shows the changes.
+\ No newline at end of file
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   first_file.txt
+        modified:   git_sesson_01.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git add first_file.txt
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git diff
+diff --git a/git_sesson_01.txt b/git_sesson_01.txt
+index 565fcf7..e5f3e7b 100644
+--- a/git_sesson_01.txt
++++ b/git_sesson_01.txt
+@@ -321,4 +321,9 @@ Untracked files:
+
+
+ lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+-$
+\ No newline at end of file
++$ Made changes to use in git example
++
++Does it shows the updated part or the whole text.
++
++The information could be useful.
++Hope it only shows the changes.
+\ No newline at end of file
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   first_file.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   git_sesson_01.txt
+
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git diff --staged
+diff --git a/first_file.txt b/first_file.txt
+index b1e5838..27f7b87 100644
+--- a/first_file.txt
++++ b/first_file.txt
+@@ -1 +1,4 @@
+-This is the first file I added to my project.
+\ No newline at end of file
++This is the first file I added to the project.
++
++This file comes before the others.
++Git is tracking the changes in this file.
+\ No newline at end of file
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git add git_sesson_01.txt
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   first_file.txt
+        modified:   git_sesson_01.txt
+
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git diff
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git diff --staged
+diff --git a/first_file.txt b/first_file.txt
+index b1e5838..27f7b87 100644
+--- a/first_file.txt
++++ b/first_file.txt
+@@ -1 +1,4 @@
+-This is the first file I added to my project.
+\ No newline at end of file
++This is the first file I added to the project.
++
++This file comes before the others.
++Git is tracking the changes in this file.
+\ No newline at end of file
+diff --git a/git_sesson_01.txt b/git_sesson_01.txt
+index 565fcf7..e5f3e7b 100644
+--- a/git_sesson_01.txt
++++ b/git_sesson_01.txt
+@@ -321,4 +321,9 @@ Untracked files:
+
+
+ lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+-$
+\ No newline at end of file
++$ Made changes to use in git example
++
++Does it shows the updated part or the whole text.
++
++The information could be useful.
++Hope it only shows the changes.
+\ No newline at end of file
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git commit -m "Minor text edits"
+[master bd38cb0] Minor text edits
+ 2 files changed, 10 insertions(+), 2 deletions(-)
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file_to_delete1.txt
+        file_to_delete2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git add .
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file_to_delete1.txt
+        new file:   file_to_delete2.txt
+
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git commit -m "Add files to delete soon"
+[master 6865a86] Add files to delete soon
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file_to_delete1.txt
+ create mode 100644 file_to_delete2.txt
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    file_to_delete1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git rm fi
+file_to_delete1.txt  file_to_delete2.txt  first_file.txt
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git rm fi
+file_to_delete1.txt  file_to_delete2.txt  first_file.txt
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git rm file_to_delete1.txt
+rm 'file_to_delete1.txt'
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    file_to_delete1.txt
+
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git commit -m "Delete file 1"
+[master 2270944] Delete file 1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 file_to_delete1.txt
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ .git
+bash: .git: command not found
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ cat .git
+cat: .git: Is a directory
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git rm file_to_delete2.txt
+rm 'file_to_delete2.txt'
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    file_to_delete2.txt
+
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git commit -m "Delete file 2"
+[master d388e25] Delete file 2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 file_to_delete2.txt
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    first_file.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        primary_file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git add primary_file.txt
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git rm first_file.txt
+rm 'first_file.txt'
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    first_file.txt -> primary_file.txt
+
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git mv second_file.txt secondary_file.txt
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    first_file.txt -> primary_file.txt
+        renamed:    second_file.txt -> secondary_file.txt
+
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    first_file.txt -> primary_file.txt
+        renamed:    second_file.txt -> secondary_file.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    third_file.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        first_folder/
+
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git mv third_file.txt first_folder/third_file.txt
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    third_file.txt -> first_folder/third_file.txt
+        renamed:    first_file.txt -> primary_file.txt
+        renamed:    second_file.txt -> secondary_file.txt
+
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ git commit -m "Reorganized files"
+[master 6d46bbb] Reorganized files
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ rename third_file.txt => first_folder/third_file.txt (100%)
+ rename first_file.txt => primary_file.txt (100%)
+ rename second_file.txt => secondary_file.txt (100%)
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$
