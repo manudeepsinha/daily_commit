@@ -1,0 +1,1970 @@
+
+lenovo@MD MINGW64 ~/Desktop/first_git_project (master)
+$ cd ..
+
+lenovo@MD MINGW64 ~/Desktop
+$ cd explore_california/
+
+lenovo@MD MINGW64 ~/Desktop/explore_california
+$ git init
+Initialized empty Git repository in C:/Users/lenovo/Desktop/explore_california/.git/
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ dir -la
+total 112
+drwxr-xr-x 1 lenovo 197609     0 Jan  1 22:16 .
+drwxr-xr-x 1 lenovo 197609     0 Jan  1 19:26 ..
+drwxr-xr-x 1 lenovo 197609     0 Jan  1 22:16 .git
+drwxr-xr-x 1 lenovo 197609     0 Jan  1 19:26 assets
+-rw-r--r-- 1 lenovo 197609 14306 Apr 12  2019 contact.html
+drwxr-xr-x 1 lenovo 197609     0 Apr 12  2019 explorers
+-rw-r--r-- 1 lenovo 197609  8010 Apr 12  2019 explorers.html
+-rw-r--r-- 1 lenovo 197609  6494 Apr 12  2019 index.html
+-rw-r--r-- 1 lenovo 197609  6935 Apr 12  2019 mission.html
+drwxr-xr-x 1 lenovo 197609     0 Jan  1 19:26 resources
+-rw-r--r-- 1 lenovo 197609 10544 Apr 12  2019 resources.html
+-rw-r--r-- 1 lenovo 197609  8084 Apr 12  2019 support.html
+drwxr-xr-x 1 lenovo 197609     0 Jan  1 19:26 tours
+-rw-r--r-- 1 lenovo 197609 12947 Apr 12  2019 tours.html
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        assets/
+        contact.html
+        explorers.html
+        index.html
+        mission.html
+        resources.html
+        resources/
+        support.html
+        tours.html
+        tours/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git add .
+warning: LF will be replaced by CRLF in assets/javascripts/jquery-3.4.0.min.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in assets/javascripts/menus.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in assets/stylesheets/main.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in contact.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in explorers.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in mission.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in resources.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in resources/faq.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in support.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tours.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tours/tour_detail_backpack.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tours/tour_detail_bigsur.html.
+The file will have its original line endings in your working directory
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   assets/images/asterisk.gif
+        new file:   assets/images/back_bug.gif
+        new file:   assets/images/backpack_bug.gif
+        new file:   assets/images/backpack_main.jpg
+        new file:   assets/images/big_sur.jpg
+        new file:   assets/images/bikes.jpg
+        new file:   assets/images/book_bug.gif
+        new file:   assets/images/breakup.jpg
+        new file:   assets/images/bridge.jpg
+        new file:   assets/images/calm_bug.gif
+        new file:   assets/images/calm_desc_bug.gif
+        new file:   assets/images/cycle_desc_bug.gif
+        new file:   assets/images/cycle_logo.png
+        new file:   assets/images/cyclist.jpg
+        new file:   assets/images/desert_bug.gif
+        new file:   assets/images/desert_desc_bug.gif
+        new file:   assets/images/emerald_bay.jpg
+        new file:   assets/images/flag.jpg
+        new file:   assets/images/home_page_back.jpg
+        new file:   assets/images/kids_desc_bug.gif
+        new file:   assets/images/logo.gif
+        new file:   assets/images/looking.jpg
+        new file:   assets/images/map_bigsur.gif
+        new file:   assets/images/map_channel.gif
+        new file:   assets/images/map_valley.gif
+        new file:   assets/images/map_whitney.gif
+        new file:   assets/images/map_yosemite.gif
+        new file:   assets/images/mission_look.jpg
+        new file:   assets/images/more_bug.gif
+        new file:   assets/images/nature_desc_bug.gif
+        new file:   assets/images/oranges.jpg
+        new file:   assets/images/return_top.gif
+        new file:   assets/images/snow_desc_bug.gif
+        new file:   assets/images/springs_desc_bug.gif
+        new file:   assets/images/star_bullet.gif
+        new file:   assets/images/taste_bug.gif
+        new file:   assets/images/taste_desc_bug.gif
+        new file:   assets/images/thead_back.gif
+        new file:   assets/images/tour_badge.png
+        new file:   assets/images/ui/ui-bg_diagonals-thick_18_b81900_40x40.png
+        new file:   assets/images/ui/ui-bg_diagonals-thick_20_666666_40x40.png
+        new file:   assets/images/ui/ui-bg_flat_10_000000_40x100.png
+        new file:   assets/images/ui/ui-bg_glass_100_f0e7c7_1x400.png
+        new file:   assets/images/ui/ui-bg_glass_65_ffffff_1x400.png
+        new file:   assets/images/ui/ui-bg_highlight-soft_100_eeeeee_1x100.png
+        new file:   assets/images/ui/ui-bg_highlight-soft_100_f6f6f6_1x100.png
+        new file:   assets/images/ui/ui-bg_highlight-soft_35_cb7d20_1x100.png
+        new file:   assets/images/ui/ui-bg_highlight-soft_75_ffe45c_1x100.png
+        new file:   assets/images/ui/ui-icons_222222_256x240.png
+        new file:   assets/images/ui/ui-icons_228ef1_256x240.png
+        new file:   assets/images/ui/ui-icons_cb7d20_256x240.png
+        new file:   assets/images/ui/ui-icons_ef8c08_256x240.png
+        new file:   assets/images/ui/ui-icons_ffd27a_256x240.png
+        new file:   assets/images/ui/ui-icons_ffffff_256x240.png
+        new file:   assets/images/wrapper_back.jpg
+        new file:   assets/javascripts/jquery-3.4.0.min.js
+        new file:   assets/javascripts/menus.js
+        new file:   assets/stylesheets/main.css
+        new file:   contact.html
+        new file:   explorers.html
+        new file:   index.html
+        new file:   mission.html
+        new file:   resources.html
+        new file:   resources/faq.html
+        new file:   support.html
+        new file:   tours.html
+        new file:   tours/tour_detail_backpack.html
+        new file:   tours/tour_detail_bigsur.html
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git commit -m "Initial commit"
+[master (root-commit) e841588] Initial commit
+ 68 files changed, 2644 insertions(+)
+ create mode 100644 assets/images/asterisk.gif
+ create mode 100644 assets/images/back_bug.gif
+ create mode 100644 assets/images/backpack_bug.gif
+ create mode 100644 assets/images/backpack_main.jpg
+ create mode 100644 assets/images/big_sur.jpg
+ create mode 100644 assets/images/bikes.jpg
+ create mode 100644 assets/images/book_bug.gif
+ create mode 100644 assets/images/breakup.jpg
+ create mode 100644 assets/images/bridge.jpg
+ create mode 100644 assets/images/calm_bug.gif
+ create mode 100644 assets/images/calm_desc_bug.gif
+ create mode 100644 assets/images/cycle_desc_bug.gif
+ create mode 100644 assets/images/cycle_logo.png
+ create mode 100644 assets/images/cyclist.jpg
+ create mode 100644 assets/images/desert_bug.gif
+ create mode 100644 assets/images/desert_desc_bug.gif
+ create mode 100644 assets/images/emerald_bay.jpg
+ create mode 100644 assets/images/flag.jpg
+ create mode 100644 assets/images/home_page_back.jpg
+ create mode 100644 assets/images/kids_desc_bug.gif
+ create mode 100644 assets/images/logo.gif
+ create mode 100644 assets/images/looking.jpg
+ create mode 100644 assets/images/map_bigsur.gif
+ create mode 100644 assets/images/map_channel.gif
+ create mode 100644 assets/images/map_valley.gif
+ create mode 100644 assets/images/map_whitney.gif
+ create mode 100644 assets/images/map_yosemite.gif
+ create mode 100644 assets/images/mission_look.jpg
+ create mode 100644 assets/images/more_bug.gif
+ create mode 100644 assets/images/nature_desc_bug.gif
+ create mode 100644 assets/images/oranges.jpg
+ create mode 100644 assets/images/return_top.gif
+ create mode 100644 assets/images/snow_desc_bug.gif
+ create mode 100644 assets/images/springs_desc_bug.gif
+ create mode 100644 assets/images/star_bullet.gif
+ create mode 100644 assets/images/taste_bug.gif
+ create mode 100644 assets/images/taste_desc_bug.gif
+ create mode 100644 assets/images/thead_back.gif
+ create mode 100644 assets/images/tour_badge.png
+ create mode 100644 assets/images/ui/ui-bg_diagonals-thick_18_b81900_40x40.png
+ create mode 100644 assets/images/ui/ui-bg_diagonals-thick_20_666666_40x40.png
+ create mode 100644 assets/images/ui/ui-bg_flat_10_000000_40x100.png
+ create mode 100644 assets/images/ui/ui-bg_glass_100_f0e7c7_1x400.png
+ create mode 100644 assets/images/ui/ui-bg_glass_65_ffffff_1x400.png
+ create mode 100644 assets/images/ui/ui-bg_highlight-soft_100_eeeeee_1x100.png
+ create mode 100644 assets/images/ui/ui-bg_highlight-soft_100_f6f6f6_1x100.png
+ create mode 100644 assets/images/ui/ui-bg_highlight-soft_35_cb7d20_1x100.png
+ create mode 100644 assets/images/ui/ui-bg_highlight-soft_75_ffe45c_1x100.png
+ create mode 100644 assets/images/ui/ui-icons_222222_256x240.png
+ create mode 100644 assets/images/ui/ui-icons_228ef1_256x240.png
+ create mode 100644 assets/images/ui/ui-icons_cb7d20_256x240.png
+ create mode 100644 assets/images/ui/ui-icons_ef8c08_256x240.png
+ create mode 100644 assets/images/ui/ui-icons_ffd27a_256x240.png
+ create mode 100644 assets/images/ui/ui-icons_ffffff_256x240.png
+ create mode 100644 assets/images/wrapper_back.jpg
+ create mode 100644 assets/javascripts/jquery-3.4.0.min.js
+ create mode 100644 assets/javascripts/menus.js
+ create mode 100644 assets/stylesheets/main.css
+ create mode 100644 contact.html
+ create mode 100644 explorers.html
+ create mode 100644 index.html
+ create mode 100644 mission.html
+ create mode 100644 resources.html
+ create mode 100644 resources/faq.html
+ create mode 100644 support.html
+ create mode 100644 tours.html
+ create mode 100644 tours/tour_detail_backpack.html
+ create mode 100644 tours/tour_detail_bigsur.html
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.html
+        modified:   explorers.html
+        modified:   index.html
+        modified:   mission.html
+        modified:   resources.html
+        modified:   resources/faq.html
+        modified:   support.html
+        modified:   tours.html
+        modified:   tours/tour_detail_backpack.html
+        modified:   tours/tour_detail_bigsur.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git diff
+warning: LF will be replaced by CRLF in contact.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in explorers.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in mission.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in resources.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in resources/faq.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in support.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tours.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tours/tour_detail_backpack.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tours/tour_detail_bigsur.html.
+The file will have its original line endings in your working directory
+diff --git a/contact.html b/contact.html
+index 2c01287..0c3210f 100644
+--- a/contact.html
++++ b/contact.html
+@@ -69,7 +69,7 @@
+             <p>If you're on this page, we're guessing you've got something to say! Drop us a line, and be sure to sign up for our newsletter. If you're looking for our seasonal tours,  let us know when you're thinking of taking a trip. Not only will we get back to you with our website exclusive tours (we don't publish these for everyone!), but we'll be sure to throw in some cool discounts and tour extras as well.</p>
+
+             <h2>Support options</h2>
+-            <p>If you're currently on a tour and need support, please visit our <a href="support.html">support</a> page. If none of these options are right for you and you still need to get in touch with us, feel free to call us at<span class="phone"> <strong>866.555.4310</strong>. Please note that this is not the support line, for support you could call </span><strong>866.555.4315</strong>. Thanks for getting in touch!</p>
++            <p>If you're currently on a tour and need support, please visit our <a href="support.html">support</a> page. If none of these options are right for you and you still need to get in touch with us, feel free to call us at<span class="phone"> <strong>866.555.4310</strong>. Please note that this is not the support line, for support you could call </span><strong>866.555.4314</strong>. Thanks for getting in touch!</p>
+           </div>
+
+           <form id="frmContact" name="frmContact" method="post" action="contact_process.html">
+@@ -268,7 +268,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/explorers.html b/explorers.html
+index f5a62e8..50ce420 100644
+--- a/explorers.html
++++ b/explorers.html
+@@ -129,7 +129,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/index.html b/index.html
+index 9a48e66..23f0d6d 100644
+--- a/index.html
++++ b/index.html
+@@ -117,7 +117,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/mission.html b/mission.html
+index f50bf59..c0deb71 100644
+--- a/mission.html
++++ b/mission.html
+@@ -115,7 +115,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/resources.html b/resources.html
+index ee25386..d59bd67 100644
+--- a/resources.html
++++ b/resources.html
+@@ -160,7 +160,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/resources/faq.html b/resources/faq.html
+index 682f04a..8bf05a5 100644
+--- a/resources/faq.html
++++ b/resources/faq.html
+@@ -304,7 +304,7 @@
+             <h2>Explore California</h2>
+             <p>5605 Nota Street<br />
+               Ventura, CA 93003</p>
+-            <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++            <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+           </div>
+         </div>
+
+diff --git a/support.html b/support.html
+index aa4ad8b..33f09f8 100644
+--- a/support.html
++++ b/support.html
+@@ -62,7 +62,7 @@
+           <p>If you have booked one of our tours, or if you are currently on a tour and need our assistance, we've got a couple of options for you. </p>
+           <div id="supportOptions">
+             <h2>If you need immediate assistance, we have the following options:</h2>
+-            <p>Our 24-hour help line: <strong>866.555.4315</strong></p>
++            <p>Our 24-hour help line: <strong>866.555.4314</strong></p>
+             <p>Our 24-hour chat support: <a href="contact/chat.html">Chat with an agent</a></p>
+             <h2> Don't need us right away?</h2>
+             <p>If your request isn't urgent, drop us a quick line and we'll get back to you within 24 hours</p>
+@@ -157,7 +157,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/tours.html b/tours.html
+index b9ac71b..280f40a 100644
+--- a/tours.html
++++ b/tours.html
+@@ -162,7 +162,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/tours/tour_detail_backpack.html b/tours/tour_detail_backpack.htmlindex 1d22bf6..df51a6f 100644
+--- a/tours/tour_detail_backpack.html
++++ b/tours/tour_detail_backpack.html
+@@ -163,7 +163,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+
+diff --git a/tours/tour_detail_bigsur.html b/tours/tour_detail_bigsur.html
+index 4785615..7b85ffe 100644
+--- a/tours/tour_detail_bigsur.html
++++ b/tours/tour_detail_bigsur.html
+@@ -135,7 +135,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+et back to you within 24 hours</p>
+@@ -157,7 +157,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/tours.html b/tours.html
+index b9ac71b..280f40a 100644
+--- a/tours.html
++++ b/tours.html
+@@ -162,7 +162,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/tours/tour_detail_backpack.html b/tours/tour_detail_backpack.htmlindex 1d22bf6..df51a6f 100644
+--- a/tours/tour_detail_backpack.html
++++ b/tours/tour_detail_backpack.html
+@@ -163,7 +163,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+
+diff --git a/tours/tour_detail_bigsur.html b/tours/tour_detail_bigsur.html
+index 4785615..7b85ffe 100644
+--- a/tours/tour_detail_bigsur.html
++++ b/tours/tour_detail_bigsur.html
+@@ -135,7 +135,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+ for you and you still need to get in touch with us, feel free to call us at<span class="phone"> <strong>866.555.4310</strong>. Please note that this is not the support line, for support you could call </span><strong>866.555.4314</strong>. Thanks for getting in touch!</p>
+           </div>
+
+           <form id="frmContact" name="frmContact" method="post" action="contact_process.html">
+@@ -268,7 +268,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/explorers.html b/explorers.html
+index f5a62e8..50ce420 100644
+--- a/explorers.html
++++ b/explorers.html
+@@ -129,7 +129,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/index.html b/index.html
+index 9a48e66..23f0d6d 100644
+--- a/index.html
++++ b/index.html
+@@ -117,7 +117,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/mission.html b/mission.html
+index f50bf59..c0deb71 100644
+--- a/mission.html
++++ b/mission.html
+@@ -115,7 +115,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/resources.html b/resources.html
+index ee25386..d59bd67 100644
+--- a/resources.html
++++ b/resources.html
+@@ -160,7 +160,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/resources/faq.html b/resources/faq.html
+index 682f04a..8bf05a5 100644
+--- a/resources/faq.html
++++ b/resources/faq.html
+@@ -304,7 +304,7 @@
+             <h2>Explore California</h2>
+             <p>5605 Nota Street<br />
+               Ventura, CA 93003</p>
+-            <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++            <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+           </div>
+         </div>
+
+diff --git a/support.html b/support.html
+index aa4ad8b..33f09f8 100644
+--- a/support.html
++++ b/support.html
+@@ -62,7 +62,7 @@
+           <p>If you have booked one of our tours, or if you are currently on a tour and need our assistance, we've got a couple of options for you. </p>
+           <div id="supportOptions">
+             <h2>If you need immediate assistance, we have the following options:</h2>
+-            <p>Our 24-hour help line: <strong>866.555.4315</strong></p>
++            <p>Our 24-hour help line: <strong>866.555.4314</strong></p>
+             <p>Our 24-hour chat support: <a href="contact/chat.html">Chat with an agent</a></p>
+             <h2> Don't need us right away?</h2>
+             <p>If your request isn't urgent, drop us a quick line and we'll get back to you within 24 hours</p>
+@@ -157,7 +157,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/tours.html b/tours.html
+index b9ac71b..280f40a 100644
+--- a/tours.html
++++ b/tours.html
+@@ -162,7 +162,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/tours/tour_detail_backpack.html b/tours/tour_detail_backpack.htmlindex 1d22bf6..df51a6f 100644
+--- a/tours/tour_detail_backpack.html
++++ b/tours/tour_detail_backpack.html
+@@ -163,7 +163,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+
+diff --git a/tours/tour_detail_bigsur.html b/tours/tour_detail_bigsur.html
+index 4785615..7b85ffe 100644
+--- a/tours/tour_detail_bigsur.html
++++ b/tours/tour_detail_bigsur.html
+@@ -135,7 +135,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git diff --color-words
+warning: LF will be replaced by CRLF in contact.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in explorers.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in mission.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in resources.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in resources/faq.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in support.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tours.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tours/tour_detail_backpack.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tours/tour_detail_bigsur.html.
+The file will have its original line endings in your working directory
+diff --git a/contact.html b/contact.html
+index 2c01287..0c3210f 100644
+--- a/contact.html
++++ b/contact.html
+@@ -69,7 +69,7 @@
+            <p>If you're on this page, we're guessing you've got something to say! Drop us a line, and be sure to sign up for our newsletter. If you're looking for our seasonal tours,  let us know when you're thinking of taking a trip. Not only will we get back to you with our website exclusive tours (we don't publish these for everyone!), but we'll be sure to throw in some cool discounts and tour extras as well.</p>
+
+            <h2>Support options</h2>
+            <p>If you're currently on a tour and need support, please visit our <a href="support.html">support</a> page. If none of these options are right for you and you still need to get in touch with us, feel free to call us at<span class="phone"> <strong>866.555.4310</strong>. Please note that this is not the support line, for support you could call </span><strong>866.555.4315</strong>.</span><strong>866.555.4314</strong>. Thanks for getting in touch!</p>
+          </div>
+
+          <form id="frmContact" name="frmContact" method="post" action="contact_process.html">
+@@ -268,7 +268,7 @@
+          <h2>Explore California</h2>
+          <p>5605 Nota Street<br />
+            Ventura, CA 93003</p>
+          <p>866.555.4310<br />866.555.4315/>866.555.4314 <em>(24 hour support)</em></p>
+        </div>
+      </div>
+    </div>
+diff --git a/explorers.html b/explorers.html
+index f5a62e8..50ce420 100644
+--- a/explorers.html
++++ b/explorers.html
+@@ -129,7 +129,7 @@
+          <h2>Explore California</h2>
+          <p>5605 Nota Street<br />
+            Ventura, CA 93003</p>
+          <p>866.555.4310<br />866.555.4315/>866.555.4314 <em>(24 hour support)</em></p>
+        </div>
+      </div>
+    </div>
+diff --git a/index.html b/index.html
+index 9a48e66..23f0d6d 100644
+--- a/index.html
++++ b/index.html
+@@ -117,7 +117,7 @@
+          <h2>Explore California</h2>
+          <p>5605 Nota Street<br />
+            Ventura, CA 93003</p>
+          <p>866.555.4310<br />866.555.4315/>866.555.4314 <em>(24 hour support)</em></p>
+        </div>
+      </div>
+    </div>
+diff --git a/mission.html b/mission.html
+index f50bf59..c0deb71 100644
+--- a/mission.html
++++ b/mission.html
+@@ -115,7 +115,7 @@
+          <h2>Explore California</h2>
+          <p>5605 Nota Street<br />
+            Ventura, CA 93003</p>
+          <p>866.555.4310<br />866.555.4315/>866.555.4314 <em>(24 hour support)</em></p>
+        </div>
+      </div>
+    </div>
+diff --git a/resources.html b/resources.html
+index ee25386..d59bd67 100644
+--- a/resources.html
++++ b/resources.html
+@@ -160,7 +160,7 @@
+          <h2>Explore California</h2>
+          <p>5605 Nota Street<br />
+            Ventura, CA 93003</p>
+          <p>866.555.4310<br />866.555.4315/>866.555.4314 <em>(24 hour support)</em></p>
+        </div>
+      </div>
+    </div>
+diff --git a/resources/faq.html b/resources/faq.html
+index 682f04a..8bf05a5 100644
+--- a/resources/faq.html
++++ b/resources/faq.html
+@@ -304,7 +304,7 @@
+            <h2>Explore California</h2>
+            <p>5605 Nota Street<br />
+              Ventura, CA 93003</p>
+            <p>866.555.4310<br />866.555.4315/>866.555.4314 <em>(24 hour support)</em></p>
+          </div>
+        </div>
+
+diff --git a/support.html b/support.html
+index aa4ad8b..33f09f8 100644
+--- a/support.html
++++ b/support.html
+@@ -62,7 +62,7 @@
+          <p>If you have booked one of our tours, or if you are currently on a tour and need our assistance, we've got a couple of options for you. </p>
+          <div id="supportOptions">
+            <h2>If you need immediate assistance, we have the following options:</h2>
+            <p>Our 24-hour help line: <strong>866.555.4315</strong></p><strong>866.555.4314</strong></p>
+            <p>Our 24-hour chat support: <a href="contact/chat.html">Chat with an agent</a></p>
+            <h2> Don't need us right away?</h2>
+            <p>If your request isn't urgent, drop us a quick line and we'll get back to you within 24 hours</p>
+@@ -157,7 +157,7 @@
+          <h2>Explore California</h2>
+          <p>5605 Nota Street<br />
+            Ventura, CA 93003</p>
+          <p>866.555.4310<br />866.555.4315/>866.555.4314 <em>(24 hour support)</em></p>
+        </div>
+      </div>
+    </div>
+diff --git a/tours.html b/tours.html
+index b9ac71b..280f40a 100644
+--- a/tours.html
++++ b/tours.html
+@@ -162,7 +162,7 @@
+          <h2>Explore California</h2>
+          <p>5605 Nota Street<br />
+            Ventura, CA 93003</p>
+          <p>866.555.4310<br />866.555.4315/>866.555.4314 <em>(24 hour support)</em></p>
+        </div>
+      </div>
+    </div>
+diff --git a/tours/tour_detail_backpack.html b/tours/tour_detail_backpack.htmlindex 1d22bf6..df51a6f 100644
+--- a/tours/tour_detail_backpack.html
++++ b/tours/tour_detail_backpack.html
+@@ -163,7 +163,7 @@
+          <h2>Explore California</h2>
+          <p>5605 Nota Street<br />
+            Ventura, CA 93003</p>
+          <p>866.555.4310<br />866.555.4315/>866.555.4314 <em>(24 hour support)</em></p>
+        </div>
+      </div>
+
+diff --git a/tours/tour_detail_bigsur.html b/tours/tour_detail_bigsur.html
+index 4785615..7b85ffe 100644
+--- a/tours/tour_detail_bigsur.html
++++ b/tours/tour_detail_bigsur.html
+@@ -135,7 +135,7 @@
+          <h2>Explore California</h2>
+          <p>5605 Nota Street<br />
+            Ventura, CA 93003</p>
+          <p>866.555.4310<br />866.555.4315/>866.555.4314 <em>(24 hour support)</em></p>
+        </div>
+      </div>
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git commit -am "Edits support phone number throughout website"
+warning: LF will be replaced by CRLF in contact.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in explorers.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in mission.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in resources.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in resources/faq.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in support.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tours.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tours/tour_detail_backpack.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tours/tour_detail_bigsur.html.
+The file will have its original line endings in your working directory
+[master 779cc61] Edits support phone number throughout website
+ 10 files changed, 12 insertions(+), 12 deletions(-)
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git diff --color-words
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+diff --git a/index.html b/index.html
+index 23f0d6d..84abca3 100644
+--- a/index.html
++++ b/index.html
+@@ -61,7 +61,7 @@
+        <div id="mainContent">
+          <div id="mainArticle">
+            <h1>Tour Spotlight</h1>
+            <p class="spotlight">This month's spotlight package is Cycle California. Whether you are looking for some serious downhill thrills to a relaxing ride along the coast, you'llyou will find something to love in Cycle California.<br /> <span class="accent"><a href="tours_cycle.html" title="Cycle California">tour details</a></span></p>
+
+            <h1>Explorer's Podcast</h1>
+            <p class="videoText">Join us each month as we publish a new Explore California video podcast, with featured tours, customer photos, and some exciting new features!<span class="accent"><a href="explorers/video.html" title="Video Podcast">Watch the full video</a></span></p>
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git commit -am "Changes you'll to you will"
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+[master 407664f] Changes you'll to you will
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git log
+commit 407664fdc23001ad490d9841bf5079aee939a801 (HEAD -> master)
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:39:02 2021 +0530
+
+    Changes you'll to you will
+
+commit 779cc6155e6dd4fb73a3690ed4d640251066f51c
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:36:23 2021 +0530
+
+    Edits support phone number throughout website
+
+commit e8415882280e49fc388c1eaa8f31d9f12cc52120
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:19:29 2021 +0530
+
+    Initial commit
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git show 779cc6155
+commit 779cc6155e6dd4fb73a3690ed4d640251066f51c
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:36:23 2021 +0530
+
+    Edits support phone number throughout website
+
+diff --git a/contact.html b/contact.html
+index 2c01287..0c3210f 100644
+--- a/contact.html
++++ b/contact.html
+@@ -69,7 +69,7 @@
+             <p>If you're on this page, we're guessing you've got something to say! Drop us a line, and be sure to sign up for our newsletter. If you're looking for our seasonal tours,  let us know when you're thinking of taking a trip. Not only will we get back to you with our website exclusive tours (we don't publish these for everyone!), but we'll be sure to throw in some cool discounts and tour extras as well.</p>
+
+             <h2>Support options</h2>
+-            <p>If you're currently on a tour and need support, please visit our <a href="support.html">support</a> page. If none of these options are right for you and you still need to get in touch with us, feel free to call us at<span class="phone"> <strong>866.555.4310</strong>. Please note that this is not the support line, for support you could call </span><strong>866.555.4315</strong>. Thanks for getting in touch!</p>
++            <p>If you're currently on a tour and need support, please visit our <a href="support.html">support</a> page. If none of these options are right for you and you still need to get in touch with us, feel free to call us at<span class="phone"> <strong>866.555.4310</strong>. Please note that this is not the support line, for support you could call </span><strong>866.555.4314</strong>. Thanks for getting in touch!</p>
+           </div>
+
+           <form id="frmContact" name="frmContact" method="post" action="contact_process.html">
+@@ -268,7 +268,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/explorers.html b/explorers.html
+index f5a62e8..50ce420 100644
+--- a/explorers.html
++++ b/explorers.html
+@@ -129,7 +129,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/index.html b/index.html
+index 9a48e66..23f0d6d 100644
+--- a/index.html
++++ b/index.html
+@@ -117,7 +117,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/mission.html b/mission.html
+index f50bf59..c0deb71 100644
+--- a/mission.html
++++ b/mission.html
+@@ -115,7 +115,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/resources.html b/resources.html
+index ee25386..d59bd67 100644
+--- a/resources.html
++++ b/resources.html
+@@ -160,7 +160,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/resources/faq.html b/resources/faq.html
+index 682f04a..8bf05a5 100644
+--- a/resources/faq.html
++++ b/resources/faq.html
+@@ -304,7 +304,7 @@
+             <h2>Explore California</h2>
+             <p>5605 Nota Street<br />
+               Ventura, CA 93003</p>
+-            <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++            <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+           </div>
+         </div>
+
+diff --git a/support.html b/support.html
+index aa4ad8b..33f09f8 100644
+--- a/support.html
++++ b/support.html
+@@ -62,7 +62,7 @@
+           <p>If you have booked one of our tours, or if you are currently on a tour and need our assistance, we've got a couple of options for you. </p>
+           <div id="supportOptions">
+             <h2>If you need immediate assistance, we have the following options:</h2>
+-            <p>Our 24-hour help line: <strong>866.555.4315</strong></p>
++            <p>Our 24-hour help line: <strong>866.555.4314</strong></p>
+             <p>Our 24-hour chat support: <a href="contact/chat.html">Chat with an agent</a></p>
+             <h2> Don't need us right away?</h2>
+             <p>If your request isn't urgent, drop us a quick line and we'll get back to you within 24 hours</p>
+@@ -157,7 +157,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/tours.html b/tours.html
+index b9ac71b..280f40a 100644
+--- a/tours.html
++++ b/tours.html
+@@ -162,7 +162,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+     </div>
+diff --git a/tours/tour_detail_backpack.html b/tours/tour_detail_backpack.htmlindex 1d22bf6..df51a6f 100644
+--- a/tours/tour_detail_backpack.html
++++ b/tours/tour_detail_backpack.html
+@@ -163,7 +163,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+
+diff --git a/tours/tour_detail_bigsur.html b/tours/tour_detail_bigsur.html
+index 4785615..7b85ffe 100644
+--- a/tours/tour_detail_bigsur.html
++++ b/tours/tour_detail_bigsur.html
+@@ -135,7 +135,7 @@
+           <h2>Explore California</h2>
+           <p>5605 Nota Street<br />
+             Ventura, CA 93003</p>
+-          <p>866.555.4310<br />866.555.4315 <em>(24 hour support)</em></p>
++          <p>866.555.4310<br />866.555.4314 <em>(24 hour support)</em></p>
+         </div>
+       </div>
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git log -n1
+commit 407664fdc23001ad490d9841bf5079aee939a801 (HEAD -> master)
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:39:02 2021 +0530
+
+    Changes you'll to you will
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git show 407 --color-words
+fatal: ambiguous argument '407': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git show 407664fdc --color-words
+commit 407664fdc23001ad490d9841bf5079aee939a801 (HEAD -> master)
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:39:02 2021 +0530
+
+    Changes you'll to you will
+
+diff --git a/index.html b/index.html
+index 23f0d6d..84abca3 100644
+--- a/index.html
++++ b/index.html
+@@ -61,7 +61,7 @@
+        <div id="mainContent">
+          <div id="mainArticle">
+            <h1>Tour Spotlight</h1>
+            <p class="spotlight">This month's spotlight package is Cycle California. Whether you are looking for some serious downhill thrills to a relaxing ride along the coast, you'llyou will find something to love in Cycle California.<br /> <span class="accent"><a href="tours_cycle.html" title="Cycle California">tour details</a></span></p>
+
+            <h1>Explorer's Podcast</h1>
+            <p class="videoText">Join us each month as we publish a new Explore California video podcast, with featured tours, customer photos, and some exciting new features!<span class="accent"><a href="explorers/video.html" title="Video Podcast">Watch the full video</a></span></p>
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   resources/faq.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git commit -am "Changes from you'll to you will in faq"
+warning: LF will be replaced by CRLF in resources/faq.html.
+The file will have its original line endings in your working directory
+[master efca559] Changes from you'll to you will in faq
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git log
+commit efca559bae80e14eb79ecb655624902c9785ca81 (HEAD -> master)
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:43:41 2021 +0530
+
+    Changes from you'll to you will in faq
+
+commit 407664fdc23001ad490d9841bf5079aee939a801
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:39:02 2021 +0530
+
+    Changes you'll to you will
+
+commit 779cc6155e6dd4fb73a3690ed4d640251066f51c
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:36:23 2021 +0530
+
+    Edits support phone number throughout website
+
+commit e8415882280e49fc388c1eaa8f31d9f12cc52120
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:19:29 2021 +0530
+
+    Initial commit
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git diff 779cc6155..efca559bae --color-words
+diff --git a/index.html b/index.html
+index 23f0d6d..84abca3 100644
+--- a/index.html
++++ b/index.html
+@@ -61,7 +61,7 @@
+        <div id="mainContent">
+          <div id="mainArticle">
+            <h1>Tour Spotlight</h1>
+            <p class="spotlight">This month's spotlight package is Cycle California. Whether you are looking for some serious downhill thrills to a relaxing ride along the coast, you'llyou will find something to love in Cycle California.<br /> <span class="accent"><a href="tours_cycle.html" title="Cycle California">tour details</a></span></p>
+
+            <h1>Explorer's Podcast</h1>
+            <p class="videoText">Join us each month as we publish a new Explore California video podcast, with featured tours, customer photos, and some exciting new features!<span class="accent"><a href="explorers/video.html" title="Video Podcast">Watch the full video</a></span></p>
+diff --git a/resources/faq.html b/resources/faq.html
+index 8bf05a5..6880a06 100644
+--- a/resources/faq.html
++++ b/resources/faq.html
+@@ -65,7 +65,7 @@
+          <h1>Learn more about our tours</h1>
+          <img src="../assets/images/bridge.jpg" alt="sunset over the Pacific Coast Highway" class="articleImage" />
+          <div class="multiCol">
+            <p>In this section you'llyou will find frequently asked questions from all our tour packages. Some FAQ sections contain links to pages with more detailed information about specific packages and their options. Be sure to read each section carefully before booking a tour. We want you to choose the tour that is perfect for you, your activity level, and your interests!</p>
+          </div>
+          <div id="faq">
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git diff 779cc6155..HEAD --color-words
+diff --git a/index.html b/index.html
+index 23f0d6d..84abca3 100644
+--- a/index.html
++++ b/index.html
+@@ -61,7 +61,7 @@
+        <div id="mainContent">
+          <div id="mainArticle">
+            <h1>Tour Spotlight</h1>
+            <p class="spotlight">This month's spotlight package is Cycle California. Whether you are looking for some serious downhill thrills to a relaxing ride along the coast, you'llyou will find something to love in Cycle California.<br /> <span class="accent"><a href="tours_cycle.html" title="Cycle California">tour details</a></span></p>
+
+            <h1>Explorer's Podcast</h1>
+            <p class="videoText">Join us each month as we publish a new Explore California video podcast, with featured tours, customer photos, and some exciting new features!<span class="accent"><a href="explorers/video.html" title="Video Podcast">Watch the full video</a></span></p>
+diff --git a/resources/faq.html b/resources/faq.html
+index 8bf05a5..6880a06 100644
+--- a/resources/faq.html
++++ b/resources/faq.html
+@@ -65,7 +65,7 @@
+          <h1>Learn more about our tours</h1>
+          <img src="../assets/images/bridge.jpg" alt="sunset over the Pacific Coast Highway" class="articleImage" />
+          <div class="multiCol">
+            <p>In this section you'llyou will find frequently asked questions from all our tour packages. Some FAQ sections contain links to pages with more detailed information about specific packages and their options. Be sure to read each section carefully before booking a tour. We want you to choose the tour that is perfect for you, your activity level, and your interests!</p>
+          </div>
+          <div id="faq">
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git mv explorers.html explorers/explorers.html
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    explorers.html -> explorers/explorers.html
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git commit -m "Change explorer.html file to its folder"
+[master 2f86f96] Change explorer.html file to its folder
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename explorers.html => explorers/explorers.html (100%)
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git log
+commit 2f86f962fe707039b1afb316fc7c5b6e4fd085a0 (HEAD -> master)
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:50:22 2021 +0530
+
+    Change explorer.html file to its folder
+
+commit efca559bae80e14eb79ecb655624902c9785ca81
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:43:41 2021 +0530
+
+    Changes from you'll to you will in faq
+
+commit 407664fdc23001ad490d9841bf5079aee939a801
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:39:02 2021 +0530
+
+    Changes you'll to you will
+
+commit 779cc6155e6dd4fb73a3690ed4d640251066f51c
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:36:23 2021 +0530
+
+    Edits support phone number throughout website
+
+commit e8415882280e49fc388c1eaa8f31d9f12cc52120
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:19:29 2021 +0530
+
+    Initial commit
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   explorers/explorers.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ .git config
+bash: .git: command not found
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git config --global core.editor "sublime"
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git commit -a
+warning: LF will be replaced by CRLF in explorers/explorers.html.
+The file will have its original line endings in your working directory
+hint: Waiting for your editor to close the file... error: cannot spawn sublime: No such file or directory
+error: unable to start editor 'sublime'
+Please supply the message using either -m or -F option.
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git config --global core.editor "Sublime Text"
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git commit -a
+warning: LF will be replaced by CRLF in explorers/explorers.html.
+The file will have its original line endings in your working directory
+hint: Waiting for your editor to close the file... Sublime Text: Sublime: command not found
+error: There was a problem with the editor 'Sublime Text'.
+Please supply the message using either -m or -F option.
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git mv tours
+usage: git mv [<options>] <source>... <destination>
+
+    -v, --verbose         be verbose
+    -n, --dry-run         dry run
+    -f, --force           force move/rename even if target exists
+    -k                    skip move/rename errors
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git mv tours
+tours/      tours.html
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git mv tours/tour_detail_backpack.html tours/tour_detail_backpack_cal.html
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    tours/tour_detail_backpack.html -> tours/tour_detail_backpack_cal.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   explorers/explorers.html
+        modified:   tours.html
+        modified:   tours/tour_detail_backpack_cal.html
+        modified:   tours/tour_detail_bigsur.html
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git add tours.html
+warning: LF will be replaced by CRLF in tours.html.
+The file will have its original line endings in your working directory
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git add tours/
+warning: LF will be replaced by CRLF in tours/tour_detail_backpack_cal.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tours/tour_detail_bigsur.html.
+The file will have its original line endings in your working directory
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   tours.html
+        renamed:    tours/tour_detail_backpack.html -> tours/tour_detail_backpack_cal.html
+        modified:   tours/tour_detail_bigsur.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.html
+        modified:   explorers/explorers.html
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git commit -m "Changes filenames of backpack tour and related links"
+[master cae3b84] Changes filenames of backpack tour and related links
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+ rename tours/{tour_detail_backpack.html => tour_detail_backpack_cal.html} (99%)
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.html
+        modified:   explorers/explorers.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git log
+commit cae3b846018d2504322875af276d327afdfda339 (HEAD -> master)
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:18:58 2021 +0530
+
+    Changes filenames of backpack tour and related links
+
+commit 2f86f962fe707039b1afb316fc7c5b6e4fd085a0
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:50:22 2021 +0530
+
+    Change explorer.html file to its folder
+
+commit efca559bae80e14eb79ecb655624902c9785ca81
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:43:41 2021 +0530
+
+    Changes from you'll to you will in faq
+
+commit 407664fdc23001ad490d9841bf5079aee939a801
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:39:02 2021 +0530
+
+    Changes you'll to you will
+
+commit 779cc6155e6dd4fb73a3690ed4d640251066f51c
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:36:23 2021 +0530
+
+    Edits support phone number throughout website
+
+commit e8415882280e49fc388c1eaa8f31d9f12cc52120
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:19:29 2021 +0530
+
+    Initial commit
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git diff
+warning: LF will be replaced by CRLF in contact.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in explorers/explorers.html.
+The file will have its original line endings in your working directory
+diff --git a/contact.html b/contact.html
+index 0c3210f..bb504fa 100644
+--- a/contact.html
++++ b/contact.html
+@@ -66,10 +66,10 @@
+           <h1>Get in touch</h1>
+           <img src="assets/images/emerald_bay.jpg" alt="Beautiful Lake Tahoe" class="articleImage" />
+           <div class="multiCol">
+-            <p>If you're on this page, we're guessing you've got something to say! Drop us a line, and be sure to sign up for our newsletter. If you're looking for our seasonal tours,  let us know when you're thinking of taking a trip. Not only will we get back to you with our website exclusive tours (we don't publish these for everyone!), but we'll be sure to throw in some cool discounts and tour extras as well.</p>
++            <p>If you are on this page, we are guessing you have got something to say! Drop us a line, and be sure to sign up for our newsletter. If you are looking for our seasonal tours,  let us know when you are thinking of taking a trip. Not only will we get back to you with our website exclusive tours (we do not publish these for everyone!), but we will be sure to throw in some cool discounts and tour extras as well.</p>
+
+             <h2>Support options</h2>
+-            <p>If you're currently on a tour and need support, please visit our <a href="support.html">support</a> page. If none of these options are right for you and you still need to get in touch with us, feel free to call us at<span class="phone"> <strong>866.555.4310</strong>. Please note that this is not the support line, for support you could call </span><strong>866.555.4314</strong>. Thanks for getting in touch!</p>
++            <p>If you are currently on a tour and need support, please visit our <a href="support.html">support</a> page. If none of these options are right for you and you still need to get in touch with us, feel free to call us at<span class="phone"> <strong>866.555.4310</strong>. Please note that this is not the support line, for support you could call </span><strong>866.555.4314</strong>. Thanks for getting in touch!</p>
+           </div>
+
+           <form id="frmContact" name="frmContact" method="post" action="contact_process.html">
+diff --git a/explorers/explorers.html b/explorers/explorers.html
+index 50ce420..323e5b1 100644
+--- a/explorers/explorers.html
++++ b/explorers/explorers.html
+@@ -69,15 +69,15 @@
+           <div class="multiCol">
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git diff --color-words
+warning: LF will be replaced by CRLF in contact.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in explorers/explorers.html.
+The file will have its original line endings in your working directory
+diff --git a/contact.html b/contact.html
+index 0c3210f..bb504fa 100644
+--- a/contact.html
++++ b/contact.html
+@@ -66,10 +66,10 @@
+          <h1>Get in touch</h1>
+          <img src="assets/images/emerald_bay.jpg" alt="Beautiful Lake Tahoe" class="articleImage" />
+          <div class="multiCol">
+            <p>If you'reyou are on this page, we'rewe are guessing you'veyou have got something to say! Drop us a line, and be sure to sign up for our newsletter. If you'reyou are looking for our seasonal tours,  let us know when you'reyou are thinking of taking a trip. Not only will we get back to you with our website exclusive tours (we don'tdo not publish these for everyone!), but we'llwe will be sure to throw in some cool discounts and tour extras as well.</p>
+            <h2>Support options</h2>
+            <p>If you'reyou are currently on a tour and need support, please visit our <a href="support.html">support</a> page. If none of these options are right for you and you still need to get in touch with us, feel free to call us at<span class="phone"> <strong>866.555.4310</strong>. Please note that this is not the support line, for support you could call </span><strong>866.555.4314</strong>. Thanks for getting in touch!</p>
+          </div>
+
+          <form id="frmContact" name="frmContact" method="post" action="contact_process.html">
+diff --git a/explorers/explorers.html b/explorers/explorers.html
+index 50ce420..323e5b1 100644
+--- a/explorers/explorers.html
++++ b/explorers/explorers.html
+@@ -69,15 +69,15 @@
+          <div class="multiCol">
+            <p>The Explorers are a community of people who love to travel, love California, and want to share their journeys and experiences with others. Joining is free, so if you haven't signed up yet, <a href="explorers/join.html">do so now!</a></p>
+            <p>Joining up will make you eligible for discounts, extra tour goodies, exclusive side excursions, and other super-secret fun stuff! It's also a great way of making friends. We have Explorers-only gatherings where you can meet, mingle, and form friendships with other touring enthusisasts!</p>
+            <p>Best of all...joiningall, joining is absolutely free!</p>
+
+            <h2>So...what<h2>What can you do?</h2>
+            <p>When you sign up, you'll be able to write articles for our <a h
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.html
+        modified:   explorers/explorers.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status -am "Remove contractions from contacts page and Multi line changes in explorer file"
+error: unknown switch `a'
+usage: git status [<options>] [--] <pathspec>...
+
+    -v, --verbose         be verbose
+    -s, --short           show status concisely
+    -b, --branch          show branch information
+    --show-stash          show stash information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain[=<version>]
+                          machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --ignored[=<mode>]    show ignored files, optional modes: traditional, matching, no. (Default: traditional)
+    --ignore-submodules[=<when>]
+                          ignore changes to submodules, optional when: all, dirty, untracked. (Default: all)
+    --column[=<style>]    list untracked files in columns
+    --no-renames          do not detect renames
+    -M, --find-renames[=<n>]
+                          detect renames, optionally set similarity index
+    --show-ignored-directory
+                          (DEPRECATED: use --ignore=matching instead) Only show directories that match an ignore pattern name.
+    --no-lock-index       (DEPRECATED: use `git --no-optional-locks status` instead) Do not lock the index
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.html
+        modified:   explorers/explorers.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git commit -am "Remove contractions from contacts page and Multi line changes in explorer file"
+warning: LF will be replaced by CRLF in contact.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in explorers/explorers.html.
+The file will have its original line endings in your working directory
+[master e085792] Remove contractions from contacts page and Multi line changes in explorer file
+ 2 files changed, 6 insertions(+), 6 deletions(-)
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.html
+        modified:   explorers/explorers.html
+        modified:   index.html
+        modified:   mission.html
+        modified:   resources.html
+        modified:   resources/faq.html
+        modified:   support.html
+        modified:   tours.html
+        modified:   tours/tour_detail_backpack_cal.html
+        modified:   tours/tour_detail_bigsur.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git commit -am "Changes Big Sur Retreat from $620 to $750"
+warning: LF will be replaced by CRLF in contact.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in explorers/explorers.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in mission.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in resources.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in resources/faq.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in support.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tours.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tours/tour_detail_backpack_cal.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tours/tour_detail_bigsur.html.
+The file will have its original line endings in your working directory
+[master 94ecb17] Changes Big Sur Retreat from 20 to 50
+ 10 files changed, 10 insertions(+), 10 deletions(-)
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.html
+        modified:   explorers/explorers.html
+        modified:   index.html
+        modified:   mission.html
+        modified:   resources.html
+        modified:   resources/faq.html
+        modified:   support.html
+        modified:   tours.html
+        modified:   tours/tour_detail_backpack_cal.html
+        modified:   tours/tour_detail_bigsur.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git commit -am "Changes California Calm from $250 to $270"
+warning: LF will be replaced by CRLF in contact.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in explorers/explorers.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in mission.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in resources.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in resources/faq.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in support.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tours.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tours/tour_detail_backpack_cal.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tours/tour_detail_bigsur.html.
+The file will have its original line endings in your working directory
+[master a39bce4] Changes California Calm from 50 to 70
+ 10 files changed, 12 insertions(+), 12 deletions(-)
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   explorers/explorers.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git commit -m "Changes to Make new friends"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   explorers/explorers.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git commit -am "Changes to Make new friends"
+warning: LF will be replaced by CRLF in explorers/explorers.html.
+The file will have its original line endings in your working directory
+[master 8f5f850] Changes to Make new friends
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   tours/tour_detail_backpack_cal.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git commit -am "Changes price of Death Valley Trek from $270 to $250"
+warning: LF will be replaced by CRLF in tours/tour_detail_backpack_cal.html.
+The file will have its original line endings in your working directory
+[master 2c730b3] Changes price of Death Valley Trek from 70 to 50
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   tours/tour_detail_backpack_cal.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git checkout -- tours/tour_detail_backpack_cal.html
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.html
+        modified:   explorers/explorers.html
+        modified:   index.html
+        modified:   mission.html
+        modified:   resources.html
+        modified:   resources/faq.html
+        modified:   support.html
+        modified:   tours.html
+        modified:   tours/tour_detail_backpack_cal.html
+        modified:   tours/tour_detail_bigsur.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git add tours*
+warning: LF will be replaced by CRLF in tours.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tours/tour_detail_bigsur.html.
+The file will have its original line endings in your working directory
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   tours.html
+        modified:   tours/tour_detail_backpack_cal.html
+        modified:   tours/tour_detail_bigsur.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.html
+        modified:   explorers/explorers.html
+        modified:   index.html
+        modified:   mission.html
+        modified:   resources.html
+        modified:   resources/faq.html
+        modified:   support.html
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git diff --staged
+diff --git a/tours.html b/tours.html
+index 4d8fa92..81c8404 100644
+--- a/tours.html
++++ b/tours.html
+@@ -129,7 +129,7 @@
+             <a href="tours/tour_detail_cycle.html">$750</a></p>
+           <h2><img src="assets/images/taste_bug.gif" alt="Taste of California" width="75" height="75" />Taste of California</h2>
+           <p>Tapas &amp; Groves <br />
+-            <a href="tours/tour_detail_taste.html">$150</a></p>
++            <a href="tours/tour_detail_taste.html">$175</a></p>
+         </div>
+         <div id="trivia" class="callOut">
+           <h1>Did You Know?</h1>
+diff --git a/tours/tour_detail_backpack_cal.html b/tours/tour_detail_backpack_cal.html
+index cd23447..b0cb147 100644
+--- a/tours/tour_detail_backpack_cal.html
++++ b/tours/tour_detail_backpack_cal.html
+@@ -81,7 +81,7 @@
+
+             <div class="tourDescription">
+               <h2>Channel Islands Excursion</h2>
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   tours.html
+        modified:   tours/tour_detail_backpack_cal.html
+        modified:   tours/tour_detail_bigsur.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.html
+        modified:   explorers/explorers.html
+        modified:   index.html
+        modified:   mission.html
+        modified:   resources.html
+        modified:   resources/faq.html
+        modified:   support.html
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git restore --staged tours.html
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   tours/tour_detail_backpack_cal.html
+        modified:   tours/tour_detail_bigsur.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.html
+        modified:   explorers/explorers.html
+        modified:   index.html
+        modified:   mission.html
+        modified:   resources.html
+        modified:   resources/faq.html
+        modified:   support.html
+        modified:   tours.html
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git reset HEAD tours/
+Unstaged changes after reset:
+M       contact.html
+M       explorers/explorers.html
+M       index.html
+M       mission.html
+M       resources.html
+M       resources/faq.html
+M       support.html
+M       tours.html
+M       tours/tour_detail_backpack_cal.html
+M       tours/tour_detail_bigsur.html
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.html
+        modified:   explorers/explorers.html
+        modified:   index.html
+        modified:   mission.html
+        modified:   resources.html
+        modified:   resources/faq.html
+        modified:   support.html
+        modified:   tours.html
+        modified:   tours/tour_detail_backpack_cal.html
+        modified:   tours/tour_detail_bigsur.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git restore
+fatal: you must specify path(s) to restore
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git restore -a
+error: unknown switch `a'
+usage: git restore [<options>] [--source=<branch>] <file>...
+
+    -s, --source <tree-ish>
+                          which tree-ish to checkout from
+    -S, --staged          restore the index
+    -W, --worktree        restore the working tree (default)
+    --ignore-unmerged     ignore unmerged entries
+    --overlay             use overlay mode
+    -q, --quiet           suppress progress reporting
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+    -m, --merge           perform a 3-way merge with the new branch
+    --conflict <style>    conflict style (merge or diff3)
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.html
+        modified:   explorers/explorers.html
+        modified:   index.html
+        modified:   mission.html
+        modified:   resources.html
+        modified:   resources/faq.html
+        modified:   support.html
+        modified:   tours.html
+        modified:   tours/tour_detail_backpack_cal.html
+        modified:   tours/tour_detail_bigsur.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git restore --.
+error: unknown option `.'
+usage: git restore [<options>] [--source=<branch>] <file>...
+
+    -s, --source <tree-ish>
+                          which tree-ish to checkout from
+    -S, --staged          restore the index
+    -W, --worktree        restore the working tree (default)
+    --ignore-unmerged     ignore unmerged entries
+    --overlay             use overlay mode
+    -q, --quiet           suppress progress reporting
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+    -m, --merge           perform a 3-way merge with the new branch
+    --conflict <style>    conflict style (merge or diff3)
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.html
+        modified:   explorers/explorers.html
+        modified:   index.html
+        modified:   mission.html
+        modified:   resources.html
+        modified:   resources/faq.html
+        modified:   support.html
+        modified:   tours.html
+        modified:   tours/tour_detail_backpack_cal.html
+        modified:   tours/tour_detail_bigsur.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git checkout --.
+error: unknown option `.'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --guess               second guess 'git checkout <no-such-branch>' (default)
+    --overlay             use overlay mode (default)
+    -q, --quiet           suppress progress reporting
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+    -m, --merge           perform a 3-way merge with the new branch
+    --conflict <style>    conflict style (merge or diff3)
+    -d, --detach          detach HEAD at named commit
+    -t, --track           set upstream info for new branch
+    -f, --force           force checkout (throw away local modifications)
+    --orphan <new-branch>
+                          new unparented branch
+    --overwrite-ignore    update ignored files (default)
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git restore -- .
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$
