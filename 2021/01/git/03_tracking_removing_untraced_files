@@ -1,0 +1,1332 @@
+
+lenovo@MD MINGW64 ~
+$ cd Desktop/explore_california/
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   resources.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git diff
+warning: LF will be replaced by CRLF in resources.html.
+The file will have its original line endings in your working directory
+diff --git a/resources.html b/resources.html
+index a4176c6..c3a44b7 100644
+--- a/resources.html
++++ b/resources.html
+@@ -94,14 +94,15 @@
+               <ul>
+                 <li>Comfortable hiking shoes</li>
+                 <li>Hat</li>
++                <li>Sunglasses</li>
++                <li>Sunscreen</li>
+                 <li>Wet/dry bag to protect valuables</li>
+                 <li>Comfortable backpack</li>
+                 <li>Stainless steel water bottle</li>
+                 <li>Multi-purpose tool</li>
+                 <li>Pack no more than one additional day of clothing</li>
+                 <li>Insect repellent</li>
+-                <li>Sunglasses</li>
+-                <li>Sunscreen</li>
++
+               </ul>
+             </li>
+             <li>Bring comfortable shoes. (I know, we shouldn’t have to say that, but you’d be amazed)</li>
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git commit -am "Changed items to bring for trip"
+warning: LF will be replaced by CRLF in resources.html.
+The file will have its original line endings in your working directory
+[master 406d42d] Changed items to bring for trip
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git log
+commit 406d42dff5b3b799c71d6bb72881b83df07a355d (HEAD -> master)
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Sun Jan 3 21:27:37 2021 +0530
+
+    Changed items to bring for trip
+
+commit 2c730b3d0c2c813d40c763c13bdb881ba8959a54
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:39:53 2021 +0530
+
+    Changes price of Death Valley Trek from 70 to 50
+
+commit 8f5f85025d1e940f098cd1639de8f1400e400651
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:34:55 2021 +0530
+
+    Changes to Make new friends
+
+commit a39bce4a0cf0dc99ade2243fca7bc9ed8ed6ffdc
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:29:53 2021 +0530
+
+    Changes California Calm from 50 to 70
+
+commit 94ecb17cd92ea3eddb6b0101233991bf8faee8fe
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:28:23 2021 +0530
+
+    Changes Big Sur Retreat from 20 to 50
+
+commit e08579275210e1088b2c38e68b1eda574d8f021c
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:25:03 2021 +0530
+
+    Remove contractions from contacts page and Multi line changes in explorer file
+
+commit cae3b846018d2504322875af276d327afdfda339
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:18:58 2021 +0530
+
+    Changes filenames of backpack tour and related links
+
+commit 2f86f962fe707039b1afb316fc7c5b6e4fd085a0
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:50:22 2021 +0530
+
+    Change explorer.html file to its folder
+
+commit efca559bae80e14eb79ecb655624902c9785ca81
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:43:41 2021 +0530
+
+    Changes from you'll to you will in faq
+
+commit 407664fdc23001ad490d9841bf5079aee939a801
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:39:02 2021 +0530
+
+    Changes you'll to you will
+
+commit 779cc6155e6dd4fb73a3690ed4d640251066f51c
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:36:23 2021 +0530
+
+    Edits support phone number throughout website
+
+commit e8415882280e49fc388c1eaa8f31d9f12cc52120
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:19:29 2021 +0530
+
+    Initial commit
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   resources.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git add resources.html
+warning: LF will be replaced by CRLF in resources.html.
+The file will have its original line endings in your working directory
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   resources.html
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git commit --amend -m "Reordered items to bring for trip"
+[master d8646c4] Reordered items to bring for trip
+ Date: Sun Jan 3 21:27:37 2021 +0530
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git log
+commit d8646c46becb48c12d217ec69ec130bd1fccb3ae (HEAD -> master)
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Sun Jan 3 21:27:37 2021 +0530
+
+    Reordered items to bring for trip
+
+commit 2c730b3d0c2c813d40c763c13bdb881ba8959a54
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:39:53 2021 +0530
+
+    Changes price of Death Valley Trek from 70 to 50
+
+commit 8f5f85025d1e940f098cd1639de8f1400e400651
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:34:55 2021 +0530
+
+    Changes to Make new friends
+
+commit a39bce4a0cf0dc99ade2243fca7bc9ed8ed6ffdc
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:29:53 2021 +0530
+
+    Changes California Calm from 50 to 70
+
+commit 94ecb17cd92ea3eddb6b0101233991bf8faee8fe
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:28:23 2021 +0530
+
+    Changes Big Sur Retreat from 20 to 50
+
+commit e08579275210e1088b2c38e68b1eda574d8f021c
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:25:03 2021 +0530
+
+    Remove contractions from contacts page and Multi line changes in explorer file
+
+commit cae3b846018d2504322875af276d327afdfda339
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:18:58 2021 +0530
+
+    Changes filenames of backpack tour and related links
+
+commit 2f86f962fe707039b1afb316fc7c5b6e4fd085a0
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:50:22 2021 +0530
+
+    Change explorer.html file to its folder
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git diff
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git show d8646c46becb48c12d217ec69ec130bd1fccb3ae
+commit d8646c46becb48c12d217ec69ec130bd1fccb3ae (HEAD -> master)
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Sun Jan 3 21:27:37 2021 +0530
+
+    Reordered items to bring for trip
+
+diff --git a/resources.html b/resources.html
+index a4176c6..27b1200 100644
+--- a/resources.html
++++ b/resources.html
+@@ -94,14 +94,16 @@
+               <ul>
+                 <li>Comfortable hiking shoes</li>
+                 <li>Hat</li>
++                <li>Sunglasses</li>
++                <li>Sunscreen</li>
++                <li>Insect repellent</li>
+                 <li>Wet/dry bag to protect valuables</li>
+                 <li>Comfortable backpack</li>
+                 <li>Stainless steel water bottle</li>
+                 <li>Multi-purpose tool</li>
+                 <li>Pack no more than one additional day of clothing</li>
+-                <li>Insect repellent</li>
+-                <li>Sunglasses</li>
+-                <li>Sunscreen</li>
++
++
+               </ul>
+             </li>
+             <li>Bring comfortable shoes. (I know, we shouldn’t have to say that, but you’d be amazed)</li>
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git commit --amend -m "Reordered items to bring for outdoor trip"
+[master 37943b4] Reordered items to bring for outdoor trip
+ Date: Sun Jan 3 21:27:37 2021 +0530
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git show d8646c46becb48c12d217ec69ec130bd1fccb3ae
+commit d8646c46becb48c12d217ec69ec130bd1fccb3ae
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Sun Jan 3 21:27:37 2021 +0530
+
+    Reordered items to bring for trip
+
+diff --git a/resources.html b/resources.html
+index a4176c6..27b1200 100644
+--- a/resources.html
++++ b/resources.html
+@@ -94,14 +94,16 @@
+               <ul>
+                 <li>Comfortable hiking shoes</li>
+                 <li>Hat</li>
++                <li>Sunglasses</li>
++                <li>Sunscreen</li>
++                <li>Insect repellent</li>
+                 <li>Wet/dry bag to protect valuables</li>
+                 <li>Comfortable backpack</li>
+                 <li>Stainless steel water bottle</li>
+                 <li>Multi-purpose tool</li>
+                 <li>Pack no more than one additional day of clothing</li>
+-                <li>Insect repellent</li>
+-                <li>Sunglasses</li>
+-                <li>Sunscreen</li>
++
++
+               </ul>
+             </li>
+             <li>Bring comfortable shoes. (I know, we shouldn’t have to say that, but you’d be amazed)</li>
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git log
+commit 37943b4d18c75332c8a0d09fa0bb19e5e096e76c (HEAD -> master)
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Sun Jan 3 21:27:37 2021 +0530
+
+    Reordered items to bring for outdoor trip
+
+commit 2c730b3d0c2c813d40c763c13bdb881ba8959a54
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:39:53 2021 +0530
+
+    Changes price of Death Valley Trek from 70 to 50
+
+commit 8f5f85025d1e940f098cd1639de8f1400e400651
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:34:55 2021 +0530
+
+    Changes to Make new friends
+
+commit a39bce4a0cf0dc99ade2243fca7bc9ed8ed6ffdc
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:29:53 2021 +0530
+
+    Changes California Calm from 50 to 70
+
+commit 94ecb17cd92ea3eddb6b0101233991bf8faee8fe
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:28:23 2021 +0530
+
+    Changes Big Sur Retreat from 20 to 50
+
+commit e08579275210e1088b2c38e68b1eda574d8f021c
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:25:03 2021 +0530
+
+    Remove contractions from contacts page and Multi line changes in explorer file
+
+commit cae3b846018d2504322875af276d327afdfda339
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:18:58 2021 +0530
+
+    Changes filenames of backpack tour and related links
+
+commit 2f86f962fe707039b1afb316fc7c5b6e4fd085a0
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:50:22 2021 +0530
+
+    Change explorer.html file to its folder
+
+commit efca559bae80e14eb79ecb655624902c9785ca81
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:43:41 2021 +0530
+
+    Changes from you'll to you will in faq
+
+commit 407664fdc23001ad490d9841bf5079aee939a801
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:39:02 2021 +0530
+
+    Changes you'll to you will
+
+commit 779cc6155e6dd4fb73a3690ed4d640251066f51c
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:36:23 2021 +0530
+
+    Edits support phone number throughout website
+
+commit e8415882280e49fc388c1eaa8f31d9f12cc52120
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:19:29 2021 +0530
+
+    Initial commit
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git show e8415882280 .. HEAD
+fatal: HEAD: no such path in the working tree.
+Use 'git <command> -- <path>...' to specify paths that do not exist locally.
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git HEAD
+git: 'HEAD' is not a git command. See 'git --help'.
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git diff e8415882280 .. HEAD
+fatal: HEAD: no such path in the working tree.
+Use 'git <command> -- <path>...' to specify paths that do not exist locally.
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git diff e8415882280 .. 37943b4d1
+fatal: 37943b4d1: no such path in the working tree.
+Use 'git <command> -- <path>...' to specify paths that do not exist locally.
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git diff e8415882280..37943b4d1
+diff --git a/contact.html b/contact.html
+index 2c01287..1273251 100644
+--- a/contact.html
++++ b/contact.html
+@@ -66,10 +66,10 @@
+           <h1>Get in touch</h1>
+           <img src="assets/images/emerald_bay.jpg" alt="Beautiful Lake Tahoe" class="articleImage" />
+           <div class="multiCol">
+-            <p>If you're on this page, we're guessing you've got something to say! Drop us a line, and be sure to sign up for our newsletter. If you're looking for our seasonal tours,  let us know when you're thinking of taking a trip. Not only will we get back to you with our website exclusive tours (we don't publish these for everyone!), but we'll be sure to throw in some cool discounts and tour extras as well.</p>
++            <p>If you are on this page, we are guessing you have got something to say! Drop us a line, and be sure to sign up for our newsletter. If you are looking for our seasonal tours,  let us know when you are thinking of taking a trip. Not only will we get back to you with our website exclusive tours (we do not publish these for everyone!), but we will be sure to throw in some cool discounts and tour extras as well.</p>
+
+             <h2>Support options</h2>
+-            <p>If you're currently on a tour and need support, please visit our <a href="support.html">support</a> page. If none of these options are right for you and you still need to get in touch with us, feel free to call us at<span class="phone"> <strong>866.555.4310</strong>. Please note that this is not the support line, for support you could call </span><strong>866.555.4315</strong>. Thanks for getting in touch!</p>
++            <p>If you are currently on a tour and need support, please visit our <a href="support.html">support</a> page. If none of these options are right for you and you still need to get in touch with us, feel free to call us at<span class="phone"> <strong>866.555.4310</strong>. Please note that this is not the support line, for support you could call </span><strong>866.555.4314</strong>. Thanks for getting in touch!</p>
+           </div>
+
+           <form id="frmContact" name="frmContact" method="post" action="contact_process.html">
+@@ -189,7 +189,7 @@
+                   <label for="nature">Nature Watch</label>
+                 </p>
+                 <p>
+-                  <input type="checkbox" name="snowboard" id="snowboard" tabindex="250">
++                  <input type="checkbox" name="snowboard" id="snowboard" tabindex="270">
+                   <label for="snowboard">Snowboard Cali</label>
+                 </p>
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git diff e8415882280..HEAD
+diff --git a/contact.html b/contact.html
+index 2c01287..1273251 100644
+--- a/contact.html
++++ b/contact.html
+@@ -66,10 +66,10 @@
+           <h1>Get in touch</h1>
+           <img src="assets/images/emerald_bay.jpg" alt="Beautiful Lake Tahoe" class="articleImage" />
+           <div class="multiCol">
+-            <p>If you're on this page, we're guessing you've got something to say! Drop us a line, and be sure to sign up for our newsletter. If you're looking for our seasonal tours,  let us know when you're thinking of taking a trip. Not only will we get back to you with our website exclusive tours (we don't publish these for everyone!), but we'll be sure to throw in some cool discounts and tour extras as well.</p>
++            <p>If you are on this page, we are guessing you have got something to say! Drop us a line, and be sure to sign up for our newsletter. If you are looking for our seasonal tours,  let us know when you are thinking of taking a trip. Not only will we get back to you with our website exclusive tours (we do not publish these for everyone!), but we will be sure to throw in some cool discounts and tour extras as well.</p>
+
+             <h2>Support options</h2>
+-            <p>If you're currently on a tour and need support, please visit our <a href="support.html">support</a> page. If none of these options are right for you and you still need to get in touch with us, feel free to call us at<span class="phone"> <strong>866.555.4310</strong>. Please note that this is not the support line, for support you could call </span><strong>866.555.4315</strong>. Thanks for getting in touch!</p>
++            <p>If you are currently on a tour and need support, please visit our <a href="support.html">support</a> page. If none of these options are right for you and you still need to get in touch with us, feel free to call us at<span class="phone"> <strong>866.555.4310</strong>. Please note that this is not the support line, for support you could call </span><strong>866.555.4314</strong>. Thanks for getting in touch!</p>
+           </div>
+
+           <form id="frmContact" name="frmContact" method="post" action="contact_process.html">
+@@ -189,7 +189,7 @@
+                   <label for="nature">Nature Watch</label>
+                 </p>
+                 <p>
+-                  <input type="checkbox" name="snowboard" id="snowboard" tabindex="250">
++                  <input type="checkbox" name="snowboard" id="snowboard" tabindex="270">
+                   <label for="snowboard">Snowboard Cali</label>
+                 </p>
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git log
+commit 37943b4d18c75332c8a0d09fa0bb19e5e096e76c (HEAD -> master)
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Sun Jan 3 21:27:37 2021 +0530
+
+    Reordered items to bring for outdoor trip
+
+commit 2c730b3d0c2c813d40c763c13bdb881ba8959a54
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:39:53 2021 +0530
+
+    Changes price of Death Valley Trek from 70 to 50
+
+commit 8f5f85025d1e940f098cd1639de8f1400e400651
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:34:55 2021 +0530
+
+    Changes to Make new friends
+
+commit a39bce4a0cf0dc99ade2243fca7bc9ed8ed6ffdc
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:29:53 2021 +0530
+
+    Changes California Calm from 50 to 70
+
+commit 94ecb17cd92ea3eddb6b0101233991bf8faee8fe
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:28:23 2021 +0530
+
+    Changes Big Sur Retreat from 20 to 50
+
+commit e08579275210e1088b2c38e68b1eda574d8f021c
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:25:03 2021 +0530
+
+    Remove contractions from contacts page and Multi line changes in explorer file
+
+commit cae3b846018d2504322875af276d327afdfda339
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:18:58 2021 +0530
+
+    Changes filenames of backpack tour and related links
+
+commit 2f86f962fe707039b1afb316fc7c5b6e4fd085a0
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:50:22 2021 +0530
+
+    Change explorer.html file to its folder
+
+commit efca559bae80e14eb79ecb655624902c9785ca81
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:43:41 2021 +0530
+
+    Changes from you'll to you will in faq
+
+commit 407664fdc23001ad490d9841bf5079aee939a801
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:39:02 2021 +0530
+
+    Changes you'll to you will
+
+commit 779cc6155e6dd4fb73a3690ed4d640251066f51c
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:36:23 2021 +0530
+
+    Edits support phone number throughout website
+
+commit e8415882280e49fc388c1eaa8f31d9f12cc52120
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:19:29 2021 +0530
+
+    Initial commit
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git checkout  efca559bae80e14eb79ecb655624902c9785ca81 -- explorers/explorers.html
+error: pathspec 'explorers/explorers.html' did not match any file(s) known to git
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git checkout  efca559bae80e14eb79ecb655624902c9785ca81 -- explorers.html
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   explorers.html
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git restore --staged
+fatal: you must specify path(s) to restore
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git restore --staged explorers,html
+error: pathspec 'explorers,html' did not match any file(s) known to git
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   explorers.html
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git restore --staged  explorers.html
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        explorers.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git del explorers.html
+git: 'del' is not a git command. See 'git --help'.
+
+The most similar commands are
+        bundle
+        help
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git rm explorers.html
+fatal: pathspec 'explorers.html' did not match any files
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git rm index.html
+rm 'index.html'
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        explorers.html
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git restore --staged index.html
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        explorers.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git restore index.html
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git add explorers.html
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git rm explorers/html
+fatal: pathspec 'explorers/html' did not match any files
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git rm explorers.html
+error: the following file has changes staged in the index:
+    explorers.html
+(use --cached to keep the file, or -f to force removal)
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git -f explorers.html
+unknown option: -f
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git statis
+git: 'statis' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   explorers.html
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git rm explorers.html
+error: the following file has changes staged in the index:
+    explorers.html
+(use --cached to keep the file, or -f to force removal)
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ -f
+bash: -f: command not found
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git rm explorers.html -f
+rm 'explorers.html'
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git log
+commit 37943b4d18c75332c8a0d09fa0bb19e5e096e76c (HEAD -> master)
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Sun Jan 3 21:27:37 2021 +0530
+
+    Reordered items to bring for outdoor trip
+
+commit 2c730b3d0c2c813d40c763c13bdb881ba8959a54
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:39:53 2021 +0530
+
+    Changes price of Death Valley Trek from 70 to 50
+
+commit 8f5f85025d1e940f098cd1639de8f1400e400651
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:34:55 2021 +0530
+
+    Changes to Make new friends
+
+commit a39bce4a0cf0dc99ade2243fca7bc9ed8ed6ffdc
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:29:53 2021 +0530
+
+    Changes California Calm from 50 to 70
+
+commit 94ecb17cd92ea3eddb6b0101233991bf8faee8fe
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:28:23 2021 +0530
+
+    Changes Big Sur Retreat from 20 to 50
+
+commit e08579275210e1088b2c38e68b1eda574d8f021c
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:25:03 2021 +0530
+
+    Remove contractions from contacts page and Multi line changes in explorer file
+
+commit cae3b846018d2504322875af276d327afdfda339
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:18:58 2021 +0530
+
+    Changes filenames of backpack tour and related links
+
+commit 2f86f962fe707039b1afb316fc7c5b6e4fd085a0
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:50:22 2021 +0530
+
+    Change explorer.html file to its folder
+
+commit efca559bae80e14eb79ecb655624902c9785ca81
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:43:41 2021 +0530
+
+    Changes from you'll to you will in faq
+
+commit 407664fdc23001ad490d9841bf5079aee939a801
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:39:02 2021 +0530
+
+    Changes you'll to you will
+
+commit 779cc6155e6dd4fb73a3690ed4d640251066f51c
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:36:23 2021 +0530
+
+    Edits support phone number throughout website
+
+commit e8415882280e49fc388c1eaa8f31d9f12cc52120
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 22:19:29 2021 +0530
+
+    Initial commit
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git revert e8415882280
+CONFLICT (modify/delete): tours/tour_detail_bigsur.html deleted in (empty tree) and modified in HEAD. Version HEAD of tours/tour_detail_bigsur.html left in tree.
+CONFLICT (rename/delete): tours/tour_detail_backpack.html deleted in (empty tree) and renamed to tours/tour_detail_backpack_cal.html in HEAD. Version HEAD of tours/tour_detail_backpack_cal.html left in tree.
+CONFLICT (modify/delete): tours.html deleted in (empty tree) and modified in HEAD. Version HEAD of tours.html left in tree.
+CONFLICT (modify/delete): support.html deleted in (empty tree) and modified in HEAD. Version HEAD of support.html left in tree.
+CONFLICT (modify/delete): resources/faq.html deleted in (empty tree) and modified in HEAD. Version HEAD of resources/faq.html left in tree.
+CONFLICT (modify/delete): resources.html deleted in (empty tree) and modified in HEAD. Version HEAD of resources.html left in tree.
+CONFLICT (modify/delete): mission.html deleted in (empty tree) and modified in HEAD. Version HEAD of mission.html left in tree.
+CONFLICT (modify/delete): index.html deleted in (empty tree) and modified in HEAD. Version HEAD of index.html left in tree.
+CONFLICT (rename/delete): explorers.html deleted in (empty tree) and renamed to explorers/explorers.html in HEAD. Version HEAD of explorers/explorers.html left in tree.
+CONFLICT (modify/delete): contact.html deleted in (empty tree) and modified in HEAD. Version HEAD of contact.html left in tree.
+Removing assets/stylesheets/main.css
+Removing assets/javascripts/menus.js
+Removing assets/javascripts/jquery-3.4.0.min.js
+Removing assets/images/wrapper_back.jpg
+Removing assets/images/ui/ui-icons_ffffff_256x240.png
+Removing assets/images/ui/ui-icons_ffd27a_256x240.png
+Removing assets/images/ui/ui-icons_ef8c08_256x240.png
+Removing assets/images/ui/ui-icons_cb7d20_256x240.png
+Removing assets/images/ui/ui-icons_228ef1_256x240.png
+Removing assets/images/ui/ui-icons_222222_256x240.png
+Removing assets/images/ui/ui-bg_highlight-soft_75_ffe45c_1x100.png
+Removing assets/images/ui/ui-bg_highlight-soft_35_cb7d20_1x100.png
+Removing assets/images/ui/ui-bg_highlight-soft_100_f6f6f6_1x100.png
+Removing assets/images/ui/ui-bg_highlight-soft_100_eeeeee_1x100.png
+Removing assets/images/ui/ui-bg_glass_65_ffffff_1x400.png
+Removing assets/images/ui/ui-bg_glass_100_f0e7c7_1x400.png
+Removing assets/images/ui/ui-bg_flat_10_000000_40x100.png
+Removing assets/images/ui/ui-bg_diagonals-thick_20_666666_40x40.png
+Removing assets/images/ui/ui-bg_diagonals-thick_18_b81900_40x40.png
+Removing assets/images/tour_badge.png
+Removing assets/images/thead_back.gif
+Removing assets/images/taste_desc_bug.gif
+Removing assets/images/taste_bug.gif
+Removing assets/images/star_bullet.gif
+Removing assets/images/springs_desc_bug.gif
+Removing assets/images/snow_desc_bug.gif
+Removing assets/images/return_top.gif
+Removing assets/images/oranges.jpg
+Removing assets/images/nature_desc_bug.gif
+Removing assets/images/more_bug.gif
+Removing assets/images/mission_look.jpg
+Removing assets/images/map_yosemite.gif
+Removing assets/images/map_whitney.gif
+Removing assets/images/map_valley.gif
+Removing assets/images/map_channel.gif
+Removing assets/images/map_bigsur.gif
+Removing assets/images/looking.jpg
+Removing assets/images/logo.gif
+Removing assets/images/kids_desc_bug.gif
+Removing assets/images/home_page_back.jpg
+Removing assets/images/flag.jpg
+Removing assets/images/emerald_bay.jpg
+Removing assets/images/desert_desc_bug.gif
+Removing assets/images/desert_bug.gif
+Removing assets/images/cyclist.jpg
+Removing assets/images/cycle_logo.png
+Removing assets/images/cycle_desc_bug.gif
+Removing assets/images/calm_desc_bug.gif
+Removing assets/images/calm_bug.gif
+Removing assets/images/bridge.jpg
+Removing assets/images/breakup.jpg
+Removing assets/images/book_bug.gif
+Removing assets/images/bikes.jpg
+Removing assets/images/big_sur.jpg
+Removing assets/images/backpack_main.jpg
+Removing assets/images/backpack_bug.gif
+Removing assets/images/back_bug.gif
+Removing assets/images/asterisk.gif
+error: could not revert e841588... Initial commit
+hint: after resolving the conflicts, mark the corrected paths
+hint: with 'git add <paths>' or 'git rm <paths>'
+hint: and commit the result with 'git commit'
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master|REVERTING)
+$ git status
+On branch master
+You are currently reverting commit e841588.
+  (fix conflicts and run "git revert --continue")
+  (use "git revert --skip" to skip this patch)
+  (use "git revert --abort" to cancel the revert operation)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    assets/images/asterisk.gif
+        deleted:    assets/images/back_bug.gif
+        deleted:    assets/images/backpack_bug.gif
+        deleted:    assets/images/backpack_main.jpg
+        deleted:    assets/images/big_sur.jpg
+        deleted:    assets/images/bikes.jpg
+        deleted:    assets/images/book_bug.gif
+        deleted:    assets/images/breakup.jpg
+        deleted:    assets/images/bridge.jpg
+        deleted:    assets/images/calm_bug.gif
+        deleted:    assets/images/calm_desc_bug.gif
+        deleted:    assets/images/cycle_desc_bug.gif
+        deleted:    assets/images/cycle_logo.png
+        deleted:    assets/images/cyclist.jpg
+        deleted:    assets/images/desert_bug.gif
+        deleted:    assets/images/desert_desc_bug.gif
+        deleted:    assets/images/emerald_bay.jpg
+        deleted:    assets/images/flag.jpg
+        deleted:    assets/images/home_page_back.jpg
+        deleted:    assets/images/kids_desc_bug.gif
+        deleted:    assets/images/logo.gif
+        deleted:    assets/images/looking.jpg
+        deleted:    assets/images/map_bigsur.gif
+        deleted:    assets/images/map_channel.gif
+        deleted:    assets/images/map_valley.gif
+        deleted:    assets/images/map_whitney.gif
+        deleted:    assets/images/map_yosemite.gif
+        deleted:    assets/images/mission_look.jpg
+        deleted:    assets/images/more_bug.gif
+        deleted:    assets/images/nature_desc_bug.gif
+        deleted:    assets/images/oranges.jpg
+        deleted:    assets/images/return_top.gif
+        deleted:    assets/images/snow_desc_bug.gif
+        deleted:    assets/images/springs_desc_bug.gif
+        deleted:    assets/images/star_bullet.gif
+        deleted:    assets/images/taste_bug.gif
+        deleted:    assets/images/taste_desc_bug.gif
+        deleted:    assets/images/thead_back.gif
+        deleted:    assets/images/tour_badge.png
+        deleted:    assets/images/ui/ui-bg_diagonals-thick_18_b81900_40x40.png
+        deleted:    assets/images/ui/ui-bg_diagonals-thick_20_666666_40x40.png
+        deleted:    assets/images/ui/ui-bg_flat_10_000000_40x100.png
+        deleted:    assets/images/ui/ui-bg_glass_100_f0e7c7_1x400.png
+        deleted:    assets/images/ui/ui-bg_glass_65_ffffff_1x400.png
+        deleted:    assets/images/ui/ui-bg_highlight-soft_100_eeeeee_1x100.png
+        deleted:    assets/images/ui/ui-bg_highlight-soft_100_f6f6f6_1x100.png
+        deleted:    assets/images/ui/ui-bg_highlight-soft_35_cb7d20_1x100.png
+        deleted:    assets/images/ui/ui-bg_highlight-soft_75_ffe45c_1x100.png
+        deleted:    assets/images/ui/ui-icons_222222_256x240.png
+        deleted:    assets/images/ui/ui-icons_228ef1_256x240.png
+        deleted:    assets/images/ui/ui-icons_cb7d20_256x240.png
+        deleted:    assets/images/ui/ui-icons_ef8c08_256x240.png
+        deleted:    assets/images/ui/ui-icons_ffd27a_256x240.png
+        deleted:    assets/images/ui/ui-icons_ffffff_256x240.png
+        deleted:    assets/images/wrapper_back.jpg
+        deleted:    assets/javascripts/jquery-3.4.0.min.js
+        deleted:    assets/javascripts/menus.js
+        deleted:    assets/stylesheets/main.css
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add/rm <file>..." as appropriate to mark resolution)
+        deleted by them: contact.html
+        added by us:     explorers/explorers.html
+        deleted by them: index.html
+        deleted by them: mission.html
+        deleted by them: resources.html
+        deleted by them: resources/faq.html
+        deleted by them: support.html
+        deleted by them: tours.html
+        added by us:     tours/tour_detail_backpack_cal.html
+        deleted by them: tours/tour_detail_bigsur.html
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master|REVERTING)
+$ git commit -am "revert all changes
+> "
+warning: LF will be replaced by CRLF in resources.html.
+The file will have its original line endings in your working directory
+[master ef278e0] revert all changes
+ 58 files changed, 851 deletions(-)
+ delete mode 100644 assets/images/asterisk.gif
+ delete mode 100644 assets/images/back_bug.gif
+ delete mode 100644 assets/images/backpack_bug.gif
+ delete mode 100644 assets/images/backpack_main.jpg
+ delete mode 100644 assets/images/big_sur.jpg
+ delete mode 100644 assets/images/bikes.jpg
+ delete mode 100644 assets/images/book_bug.gif
+ delete mode 100644 assets/images/breakup.jpg
+ delete mode 100644 assets/images/bridge.jpg
+ delete mode 100644 assets/images/calm_bug.gif
+ delete mode 100644 assets/images/calm_desc_bug.gif
+ delete mode 100644 assets/images/cycle_desc_bug.gif
+ delete mode 100644 assets/images/cycle_logo.png
+ delete mode 100644 assets/images/cyclist.jpg
+ delete mode 100644 assets/images/desert_bug.gif
+ delete mode 100644 assets/images/desert_desc_bug.gif
+ delete mode 100644 assets/images/emerald_bay.jpg
+ delete mode 100644 assets/images/flag.jpg
+ delete mode 100644 assets/images/home_page_back.jpg
+ delete mode 100644 assets/images/kids_desc_bug.gif
+ delete mode 100644 assets/images/logo.gif
+ delete mode 100644 assets/images/looking.jpg
+ delete mode 100644 assets/images/map_bigsur.gif
+ delete mode 100644 assets/images/map_channel.gif
+ delete mode 100644 assets/images/map_valley.gif
+ delete mode 100644 assets/images/map_whitney.gif
+ delete mode 100644 assets/images/map_yosemite.gif
+ delete mode 100644 assets/images/mission_look.jpg
+ delete mode 100644 assets/images/more_bug.gif
+ delete mode 100644 assets/images/nature_desc_bug.gif
+ delete mode 100644 assets/images/oranges.jpg
+ delete mode 100644 assets/images/return_top.gif
+ delete mode 100644 assets/images/snow_desc_bug.gif
+ delete mode 100644 assets/images/springs_desc_bug.gif
+ delete mode 100644 assets/images/star_bullet.gif
+ delete mode 100644 assets/images/taste_bug.gif
+ delete mode 100644 assets/images/taste_desc_bug.gif
+ delete mode 100644 assets/images/thead_back.gif
+ delete mode 100644 assets/images/tour_badge.png
+ delete mode 100644 assets/images/ui/ui-bg_diagonals-thick_18_b81900_40x40.png
+ delete mode 100644 assets/images/ui/ui-bg_diagonals-thick_20_666666_40x40.png
+ delete mode 100644 assets/images/ui/ui-bg_flat_10_000000_40x100.png
+ delete mode 100644 assets/images/ui/ui-bg_glass_100_f0e7c7_1x400.png
+ delete mode 100644 assets/images/ui/ui-bg_glass_65_ffffff_1x400.png
+ delete mode 100644 assets/images/ui/ui-bg_highlight-soft_100_eeeeee_1x100.png
+ delete mode 100644 assets/images/ui/ui-bg_highlight-soft_100_f6f6f6_1x100.png
+ delete mode 100644 assets/images/ui/ui-bg_highlight-soft_35_cb7d20_1x100.png
+ delete mode 100644 assets/images/ui/ui-bg_highlight-soft_75_ffe45c_1x100.png
+ delete mode 100644 assets/images/ui/ui-icons_222222_256x240.png
+ delete mode 100644 assets/images/ui/ui-icons_228ef1_256x240.png
+ delete mode 100644 assets/images/ui/ui-icons_cb7d20_256x240.png
+ delete mode 100644 assets/images/ui/ui-icons_ef8c08_256x240.png
+ delete mode 100644 assets/images/ui/ui-icons_ffd27a_256x240.png
+ delete mode 100644 assets/images/ui/ui-icons_ffffff_256x240.png
+ delete mode 100644 assets/images/wrapper_back.jpg
+ delete mode 100644 assets/javascripts/jquery-3.4.0.min.js
+ delete mode 100644 assets/javascripts/menus.js
+ delete mode 100644 assets/stylesheets/main.css
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git log
+commit ef278e04a54cc80c18aa2bd9d195c892b0029e83 (HEAD -> master)
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Sun Jan 3 23:04:44 2021 +0530
+
+    revert all changes
+
+commit 37943b4d18c75332c8a0d09fa0bb19e5e096e76c
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Sun Jan 3 21:27:37 2021 +0530
+
+    Reordered items to bring for outdoor trip
+
+commit 2c730b3d0c2c813d40c763c13bdb881ba8959a54
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:39:53 2021 +0530
+
+    Changes price of Death Valley Trek from 70 to 50
+
+commit 8f5f85025d1e940f098cd1639de8f1400e400651
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:34:55 2021 +0530
+
+    Changes to Make new friends
+
+commit a39bce4a0cf0dc99ade2243fca7bc9ed8ed6ffdc
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:29:53 2021 +0530
+
+    Changes California Calm from 50 to 70
+
+commit 94ecb17cd92ea3eddb6b0101233991bf8faee8fe
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:28:23 2021 +0530
+
+    Changes Big Sur Retreat from 20 to 50
+
+commit e08579275210e1088b2c38e68b1eda574d8f021c
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:25:03 2021 +0530
+
+    Remove contractions from contacts page and Multi line changes in explorer file
+
+commit cae3b846018d2504322875af276d327afdfda339
+Author: lenovo <manudeep.sinha1999@gmail.com>
+Date:   Fri Jan 1 23:18:58 2021 +0530
+
+    Changes filenames of backpack tour and related links
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git revert 37943b4d18c75332c8a0d09fa0bb19e5e096e76c
+hint: Waiting for your editor to close the file... Sublime Text: Sublime: command not found
+error: There was a problem with the editor 'Sublime Text'.
+Please supply the message using either -m or -F option.
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git revert 37943b4d18c75332c8a0d09fa0bb19e5e096e76c -m "Reverting the changes to edits"
+error: option `mainline' expects a number greater than zero
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   resources.html
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git revert 37943b4d18c75332c8a0d09fa0bb19e5e096e76c -m "Reverting the changes to edits"
+error: option `mainline' expects a number greater than zero
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   resources.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Community_Family_Person info from file.ipynb
+        links_12_00.txt
+        links_12_01.txt
+        links_12_02.txt
+        links_12_13.txt
+        links_linux.txt
+        to buy.txt
+        to-do.txt
+        to_buy_list.txt
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git clean -n
+Would remove Community_Family_Person info from file.ipynb
+Would remove links_12_00.txt
+Would remove links_12_01.txt
+Would remove links_12_02.txt
+Would remove links_12_13.txt
+Would remove links_linux.txt
+Would remove to buy.txt
+Would remove to-do.txt
+Would remove to_buy_list.txt
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git clean -f
+Removing Community_Family_Person info from file.ipynb
+Removing links_12_00.txt
+Removing links_12_01.txt
+Removing links_12_02.txt
+Removing links_12_13.txt
+Removing links_linux.txt
+Removing to buy.txt
+Removing to-do.txt
+Removing to_buy_list.txt
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   resources.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        access_log.txt
+        temp.txt
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   resources.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        access_log.txt
+        temp.txt
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git clean -n
+Would remove .gitignore
+Would remove access_log.txt
+Would remove temp.txt
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git clean -f
+Removing .gitignore
+Removing access_log.txt
+Removing temp.txt
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   resources.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        access.log
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   resources.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   resources.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git add .gitignore
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git commit -am "Add .gitignore file"
+[master ee244e6] Add .gitignore file
+ 2 files changed, 12 insertions(+), 5 deletions(-)
+ create mode 100644 .gitignore
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        db_config.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git add db_config.txt
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git commit -m "Add database config file"
+[master 02deb89] Add database config file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 db_config.txt
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+        modified:   db_config.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git rm db_config.txt
+error: the following file has local modifications:
+    db_config.txt
+(use --cached to keep the file, or -f to force removal)
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git rm --cached db_config.txt
+rm 'db_config.txt'
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git stauts
+git: 'stauts' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    db_config.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git add .gitignore
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   .gitignore
+        deleted:    db_config.txt
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git commit -m " Adds database config file"
+[master a66cc8a]  Adds database config file
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ delete mode 100644 db_config.txt
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git ls-tree
+usage: git ls-tree [<options>] <tree-ish> [<path>...]
+
+    -d                    only show trees
+    -r                    recurse into subtrees
+    -t                    show trees when recursing
+    -z                    terminate entries with NUL byte
+    -l, --long            include object size
+    --name-only           list only filenames
+    --name-status         list only filenames
+    --full-name           use full path names
+    --full-tree           list entire tree; not just current directory (implies --full-name)
+    --abbrev[=<n>]        use <n> digits to display object names
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git -ls tree
+unknown option: -ls
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git ls-tree HEAD
+100644 blob 61aa3bd274000785cd31f0b63565623e5f2c342f    .gitignore
+100644 blob 12732511d068a93413c35c91e091a14cf108616b    contact.html
+040000 tree fd6fbf7866c01f7ae0536bf165c187ed272b870e    explorers
+100644 blob d39b10e204c703838018bb3439c23f950efec861    index.html
+100644 blob ffc44e0b3139540b20a1c966765b7b7ab71bb9ec    mission.html
+100644 blob a4176c68d4e50aa0541f7955e4474acad6286d27    resources.html
+040000 tree bcf10a988b12d30665ecfba07121178b45b3d0e7    resources
+100644 blob 0ae9825bbf13f18a50bf97070569cd0cccc1048f    support.html
+100644 blob 4d8fa922c82a77662b967858e26f0ed4b1fd4680    tours.html
+040000 tree e9906bdd2f48dfa0a37952250fac946c889a88e0    tours
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitkeep
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git clean .gitkeep -n
+Would remove .gitkeep
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git clean .gitkeep -f
+Removing .gitkeep
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        temp/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git add temp/
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   temp/.gitkeep
+
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git commit -m "Track temporary directory"
+[master 4d46077] Track temporary directory
+ 1 file changed, 1 insertion(+)
+ create mode 100644 temp/.gitkeep
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+lenovo@MD MINGW64 ~/Desktop/explore_california (master)
+$
