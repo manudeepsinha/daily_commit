@@ -5,31 +5,15 @@ By starting with 1 and 2, the first 10 terms will be:
 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 By considering the terms in the Fibonacci sequence whose values do not exceed four million, 
 find the sum of the even-valued terms.
-
-unable to put constraint of values exceeding 4 million w/o checking everytime (that will be time consuming)
 '''
-def checkEven(n):
-	if n%2 == 0:
-		return True
-	return False
-
-n = int(input())
-if n > 0 and n < :
-	if n <= 2:
-		if n == 1:
-			print("Sum: 0")
-		else:
-			print("Sum: 2")
-	else:
-		sum = 2
-		num1 = 1
-		num2 = 2
-		for i in range(n-2):
-			num2 += num1
-			if checkEven(num2):
-				sum += num2
-			num1 = num2 - num1
-		print(f"Sum: {sum}")
-
-else:
-	print("Enter positive number.")
+sum = 2
+num1 = 1
+num2 = 2
+while num2<4000000:
+    num2 += num1
+    if num2 >=4000000:
+        break
+    if num2%2 == 0:
+        sum += num2
+    num1 = num2 - num1
+print(f"Sum: {sum}")
