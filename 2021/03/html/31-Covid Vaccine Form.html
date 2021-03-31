@@ -1,0 +1,46 @@
+<!--
+	This is a HTML comment.
+	Following is the first HTML file.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Covid Vaccination Form</title>
+</head>
+<body>
+	<h2><b>Covid Vaccination Form</b></h2>
+	<form>
+		Full name: 
+			<input type="text" name="simple_text"><br><br>
+		Age:
+			<select>
+				<option>>50</option>
+				<option>45-49</option>
+			    <option><45</option>
+				<option>NOTA</option>
+			</select><br><br>
+		Sex: 
+			<input type="radio" name="sex">Male
+			<input type="radio" name="sex">Female
+		    <input type="radio" name="sex">Trans<br><br>
+		Had the first dose? 
+			<select>
+				<option>--</option>
+				<option>Yes</option>
+                <option>No</option>					
+			</select><br><br>
+		If yes, any symptoms? <br>
+			<input type="checkbox" name="fever">
+				<label for="fever">Fever</label>
+			<input type="checkbox" name="runnyNose">
+				<label for="runnyNose">Runny nose</label>
+			<input type="checkbox" name="headache">
+				<label for="headache">Headache</label><br><br>
+		If any other symptoms than those mentioned, state below:<br>
+			<textarea name="text_area"></textarea><br><br>
+		If have any other medical conditions, click below:<br>	
+			<button name="button" autofocus>Click Me!</button><br><br>
+			<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
